@@ -41,7 +41,10 @@
       </div>
       <!-- Fin Navbar2-->
       <div class="container-fluid">
-          <div class="col-md-12" id="workspace">
+          <div class="col-md-2" id="menu-izq">
+             <?php echo Helper::menu_izquierdo($modulo); ?>
+          </div>
+          <div class="col-md-10" id="workspace">
           		<!-- Inicio Yield-->
               <?php echo $content; ?>
               <!-- Fin Yield-->

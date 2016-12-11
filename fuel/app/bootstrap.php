@@ -8,6 +8,7 @@ require COREPATH.'bootstrap.php';
 	'Rest' => APPPATH.'classes/initializers/rest.php',
 	'Url' => APPPATH.'classes/initializers/url.php',
 	'Helper' => APPPATH.'classes/initializers/helper.php',
+	'Cipher' => APPPATH.'classes/initializers/cipher.php',
 ));
 
 // Register the autoloader

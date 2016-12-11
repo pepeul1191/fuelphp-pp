@@ -40,6 +40,9 @@ define('COREPATH', realpath(__DIR__.'/fuel/core/').DIRECTORY_SEPARATOR);
 defined('FUEL_START_TIME') or define('FUEL_START_TIME', microtime(true));
 defined('FUEL_START_MEM') or define('FUEL_START_MEM', memory_get_usage());
 
+//Usado para initializers/cipher.php
+define('HASH_KEY','50631f4f8ba97');
+
 // Load in the Fuel autoloader
 if ( ! file_exists(COREPATH.'classes'.DIRECTORY_SEPARATOR.'autoloader.php'))
 {
