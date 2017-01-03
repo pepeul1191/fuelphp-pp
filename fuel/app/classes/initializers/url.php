@@ -3,7 +3,7 @@ class Url
 {
     public static function base_url()
     {
-       return 'http://localhost/blog/';
+       return 'http://localhost/fuelphp/';
     }
 
     public static function statics()
