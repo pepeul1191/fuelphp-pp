@@ -6,14 +6,14 @@
                 <div class="loginbox-or">
                     <div class="or-line"></div>
                 </div>
-                <form accept-charset="UTF-8" action="<?php echo Url::base_url() ?>login/acceder" method="post" class="form">
+                <form accept-charset="UTF-8" action="{Url::base_url()}login/acceder" method="post" class="form">
                     <input type="text" class="form-control login-input" placeholder="Usuario" name="usuario"/>
                     <input type="password" class="form-control login-input" placeholder="Contraseña" name="contrasenia"/>
-                    <?php  if (isset($mensaje)){ ?>
+                    {if isset($mensaje)}
                     <div class="logobox">
                         <label class="color-rojo">Usario y/o contraseña incorrectos</label>
                     </div>
-                    <?php } ?>
+                    {/if}
                     <input type="submit" name="login" class="btn btn-primary btn-block btn-login-input" value="Acceder" id="btn-login">
                     <div class="loginbox-forgot">
                         <a href="">Se olvidó su contraseña?</a>

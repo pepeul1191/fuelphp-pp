@@ -5,12 +5,10 @@ class Controller_Login extends Controller
     public function action_index()
     {
         if (Session::get('autenticado') != true){
-            $view = View::forge('layouts/blank/layout');
+            $view = View::forge('layouts/blank.tpl');
             $view->set_global('title', 'Login');
-            $view->header = View::forge('layouts/blank/header');
-            $view->content = View::forge('login/index');
-            $view->footer = View::forge('layouts/blank/footer');
-            $view->set_global('array_css', ['assets/login/css/index']);
+            $view->set_global('csss', ['assets/login/css/index']);
+            $view->set_global('partial', 'login/index.tpl');
 
             return $view;
         }else{
@@ -30,15 +28,14 @@ class Controller_Login extends Controller
             Session::set('autenticado', true);
             Session::set('usuario', $usuario);
             Session::set('tiempo', date('m/d/Y h:i:s a', time()));
+
             Response::redirect(Url::base_url(), 'refresh');
         }else{
-            $view = View::forge('layouts/blank/layout');
+            $view = View::forge('layouts/blank.tpl');
             $view->set_global('title', 'Login');
             $view->set_global('mensaje', true);
-            $view->header = View::forge('layouts/blank/header');
-            $view->content = View::forge('login/index');
-            $view->footer = View::forge('layouts/blank/footer');
-            $view->set_global('array_css', ['assets/login/css/index']);
+            $view->set_global('csss', ['assets/login/css/index']);
+            $view->set_global('partial', 'login/index.tpl');
 
             return $view;
         }

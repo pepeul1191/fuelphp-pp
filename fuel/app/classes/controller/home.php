@@ -12,12 +12,11 @@ class Controller_Home extends Controller
     public function action_index()
     {
         if (Session::get('autenticado') == true){
-           $view = View::forge('layouts/application/layout');
-           $view->set_global('title', 'Home');
-           $view->set_global('modulo', 'Accesos');
-           $view->header = View::forge('layouts/application/header');
-           $view->content = View::forge('home/index');
-           $view->footer = View::forge('layouts/application/footer');
+            $view = View::forge('layouts/application.tpl');
+            $view->set_global('title', 'Home');
+            $view->set_global('modulo', 'Accesos');
+            $view->set_global('csss', ['assets/login/css/index']);
+            $view->set_global('partial', 'home/index.tpl');
 
            return $view;
         }else{
