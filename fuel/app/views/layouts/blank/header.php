@@ -8,13 +8,6 @@
 <!-- Inicio CSS-->
 <link rel="stylesheet" type="text/css" href="<?php echo Url::statics(); ?>bower_components/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo Url::statics(); ?>bower_components/font-awesome/css/font-awesome.min.css" />
-<link rel="stylesheet" type="text/css" href="<?php echo Url::statics(); ?>assets/site/css/styles.css" />
-<link rel="stylesheet" type="text/css" href="<?php echo Url::statics(); ?>assets/site/css/styles.css" />
-<!-- Inicio Beyond-->
-<link id="beyond-link" href="<?php echo Url::statics(); ?>beyond/assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo Url::statics(); ?>beyond/assets/css/demo.min.css" rel="stylesheet" />
-<link href="<?php echo Url::statics(); ?>beyond/assets/css/typicons.min.css" rel="stylesheet" />
-<link href="<?php echo Url::statics(); ?>beyond/assets/css/animate.min.css" rel="stylesheet" />
-<!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+<link rel="stylesheet" type="text/css" href="<?php echo Url::statics(); ?>bower_components/bootstrap-redmine/assets/css/style.css" />
 <?php if (isset($array_css)){ echo Helper::load_css($array_css); }?>
 <!-- Fin CSS-->

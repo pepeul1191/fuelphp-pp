@@ -8,7 +8,7 @@ class Url
 
     public static function statics()
     {
-       return 'http://localhost:8001/dashboard/';
+       return 'http://localhost:8001/dashboard-redmine/';
     }
 
     public static function get_service($key)
