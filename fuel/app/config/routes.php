@@ -10,5 +10,6 @@ return array(
 	'welcome' => array(array('GET', new Route('welcome/blank'))),
 	'accesos/modulo/listar'  => array(array('GET', new Route('welcome/listar'))),
 	//http://localhost:3000/accesos/modulo/listar?data=
-	'smarty/login'  => array(array('GET', new Route('welcome/smarty_login'))),
+	'accesos' => array(array('GET', new Route('accesos/usuario/index/'))),
+	'accesos/usuarios' => array(array('GET', new Route('accesos/usuario/index/'))),
 );

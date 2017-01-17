@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-01-17 15:13:17
+/* Smarty version 3.1.31, created on 2017-01-17 16:21:25
   from "/home/pepe/Documentos/php/fuelphp/fuel/app/views/layouts/application.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_587e7add0bb273_35693676',
+  'unifunc' => 'content_587e8ad5e1ac99_58539746',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_587e7add0bb273_35693676 (Smarty_Internal_Template $_smarty_tpl) {
+function content_587e8ad5e1ac99_58539746 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>

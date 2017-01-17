@@ -11,17 +11,13 @@ class Controller_Home extends Controller
 
     public function action_index()
     {
-        if (Session::get('autenticado') == true){
-            $view = View::forge('layouts/application.tpl');
-            $view->set_global('title', 'Home');
-            $view->set_global('modulo', 'Accesos');
-            $view->set_global('csss', ['assets/login/css/index']);
-            $view->set_global('partial', 'home/index.tpl');
+         $view = View::forge('layouts/home.tpl');
+         $view->set_global('title', 'Home');
+         $view->set_global('modulo', 'Accesos');
+         $view->set_global('csss', ['assets/login/css/index']);
+         $view->set_global('partial', 'home/index.tpl');
 
-           return $view;
-        }else{
-           Response::redirect('login');
-        }
-	}
+         return $view;
+    }
 }
 ?>
