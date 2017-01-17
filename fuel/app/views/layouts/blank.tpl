@@ -8,7 +8,7 @@
       <!-- Inicio CSS-->
       <link rel="stylesheet" type="text/css" href="{Url::statics()}bower_components/bootstrap/dist/css/bootstrap.min.css" />
       <link rel="stylesheet" type="text/css" href="{Url::statics()}bower_components/font-awesome/css/font-awesome.min.css" />
-      <link rel="stylesheet" type="text/css" href="{Url::statics()}bower_components/bootstrap-redmine/assets/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="{Url::statics()}bower_components/bootstrap-redmine/assets/css/styles.css" />
       {if isset($csss)}{Helper::load_css($csss)}{/if}
       <!-- Fin CSS-->
     </head>
