@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-01-17 16:24:34
+/* Smarty version 3.1.31, created on 2017-01-17 17:22:49
   from "/home/pepe/Documentos/php/fuelphp/fuel/app/views/layouts/blank.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_587e8b920c4363_95346537',
+  'unifunc' => 'content_587e9939535b84_00331390',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b4270afcad1778b41760d19e600115e54672daba' => 
     array (
       0 => '/home/pepe/Documentos/php/fuelphp/fuel/app/views/layouts/blank.tpl',
-      1 => 1484684047,
+      1 => 1484691469,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_587e8b920c4363_95346537 (Smarty_Internal_Template $_smarty_tpl) {
+function content_587e9939535b84_00331390 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,7 +38,7 @@ bower_components/bootstrap/dist/css/bootstrap.min.css" />
       <link rel="stylesheet" type="text/css" href="<?php echo Url::statics();?>
 bower_components/font-awesome/css/font-awesome.min.css" />
       <link rel="stylesheet" type="text/css" href="<?php echo Url::statics();?>
-bower_components/bootstrap-redmine/assets/css/style.css" />
+bower_components/bootstrap-redmine/assets/css/styles.css" />
       <?php if (isset($_smarty_tpl->tpl_vars['csss']->value)) {
 echo Helper::load_css($_smarty_tpl->tpl_vars['csss']->value);
 }?>
