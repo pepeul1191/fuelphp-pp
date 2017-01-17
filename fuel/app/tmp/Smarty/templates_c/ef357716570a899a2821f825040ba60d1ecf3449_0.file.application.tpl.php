@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-01-17 14:50:06
+/* Smarty version 3.1.31, created on 2017-01-17 15:13:17
   from "/home/pepe/Documentos/php/fuelphp/fuel/app/views/layouts/application.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_587e756eb02d21_32531330',
+  'unifunc' => 'content_587e7add0bb273_35693676',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ef357716570a899a2821f825040ba60d1ecf3449' => 
     array (
       0 => '/home/pepe/Documentos/php/fuelphp/fuel/app/views/layouts/application.tpl',
-      1 => 1484682604,
+      1 => 1484683994,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_587e756eb02d21_32531330 (Smarty_Internal_Template $_smarty_tpl) {
+function content_587e7add0bb273_35693676 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -100,15 +100,15 @@ bower_components/underscore/underscore-min.js" type="text/javascript"><?php echo
 >
       <?php echo '<script'; ?>
  src="<?php echo Url::statics();?>
-swp/js/mootools-core.min.js" type="text/javascript"><?php echo '</script'; ?>
+bower_components/swp-plugins/assets/js/mootools-core.min.js" type="text/javascript"><?php echo '</script'; ?>
 >
       <?php echo '<script'; ?>
  src="<?php echo Url::statics();?>
-swp/js/mootools.min.js" type="text/javascript"><?php echo '</script'; ?>
+bower_components/swp-plugins/assets/js/mootools.min.js" type="text/javascript"><?php echo '</script'; ?>
 >
       <?php echo '<script'; ?>
  src="<?php echo Url::statics();?>
-swp/js/mootools-interfaces.min.js" type="text/javascript"><?php echo '</script'; ?>
+bower_components/swp-plugins/assets/js/mootools-interfaces.min.js" type="text/javascript"><?php echo '</script'; ?>
 >
       <?php echo '<script'; ?>
  src="<?php echo Url::statics();?>

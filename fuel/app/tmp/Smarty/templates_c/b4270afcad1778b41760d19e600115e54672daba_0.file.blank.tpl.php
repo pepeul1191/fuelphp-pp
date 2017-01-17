@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-01-17 14:41:15
+/* Smarty version 3.1.31, created on 2017-01-17 15:14:22
   from "/home/pepe/Documentos/php/fuelphp/fuel/app/views/layouts/blank.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_587e735b214584_27733980',
+  'unifunc' => 'content_587e7b1e27f300_70853636',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b4270afcad1778b41760d19e600115e54672daba' => 
     array (
       0 => '/home/pepe/Documentos/php/fuelphp/fuel/app/views/layouts/blank.tpl',
-      1 => 1484682072,
+      1 => 1484684047,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_587e735b214584_27733980 (Smarty_Internal_Template $_smarty_tpl) {
+function content_587e7b1e27f300_70853636 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,10 +45,12 @@ echo Helper::load_css($_smarty_tpl->tpl_vars['csss']->value);
       <!-- Fin CSS-->
     </head>
     <body>
+      <!-- Inicio Yield-->
       <?php $_smarty_tpl->_subTemplateRender($_smarty_tpl->tpl_vars['partial']->value, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?>
 
-       <!-- Inicio JS-->
+      <!-- Fin Yield-->
+      <!-- Inicio JS-->
       <?php echo '<script'; ?>
  src="<?php echo Url::statics();?>
 bower_components/jquery/dist/jquery.min.js" type="text/javascript"><?php echo '</script'; ?>
@@ -63,15 +65,15 @@ bower_components/underscore/underscore-min.js" type="text/javascript"><?php echo
 >
       <?php echo '<script'; ?>
  src="<?php echo Url::statics();?>
-swp/js/mootools-core.min.js" type="text/javascript"><?php echo '</script'; ?>
+bower_components/swp-plugins/assets/js/mootools-core.min.js" type="text/javascript"><?php echo '</script'; ?>
 >
       <?php echo '<script'; ?>
  src="<?php echo Url::statics();?>
-swp/js/mootools.min.js" type="text/javascript"><?php echo '</script'; ?>
+bower_components/swp-plugins/assets/js/mootools.min.js" type="text/javascript"><?php echo '</script'; ?>
 >
       <?php echo '<script'; ?>
  src="<?php echo Url::statics();?>
-swp/js/mootools-interfaces.min.js" type="text/javascript"><?php echo '</script'; ?>
+bower_components/swp-plugins/assets/js/mootools-interfaces.min.js" type="text/javascript"><?php echo '</script'; ?>
 >
       <?php echo '<script'; ?>
  src="<?php echo Url::statics();?>

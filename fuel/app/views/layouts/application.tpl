@@ -50,9 +50,9 @@
       <script src="{Url::statics()}bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
       <script src="{Url::statics()}bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
       <script src="{Url::statics()}bower_components/underscore/underscore-min.js" type="text/javascript"></script>
-      <script src="{Url::statics()}swp/js/mootools-core.min.js" type="text/javascript"></script>
-      <script src="{Url::statics()}swp/js/mootools.min.js" type="text/javascript"></script>
-      <script src="{Url::statics()}swp/js/mootools-interfaces.min.js" type="text/javascript"></script>
+      <script src="{Url::statics()}bower_components/swp-plugins/assets/js/mootools-core.min.js" type="text/javascript"></script>
+      <script src="{Url::statics()}bower_components/swp-plugins/assets/js/mootools.min.js" type="text/javascript"></script>
+      <script src="{Url::statics()}bower_components/swp-plugins/assets/js/mootools-interfaces.min.js" type="text/javascript"></script>
       <script src="{Url::statics()}assets/site/js/app.js" type="text/javascript"></script>
       {if isset($jss)}{Helper::load_js($jss)}{/if}
       <!-- Fin JS-->
