@@ -20,10 +20,20 @@ return array(
 	# accesos / modulo
 	'accesos/modulo/listar'  => array(array('GET', new Route('accesos/modulo/listar'))),
 	'accesos/modulo/guardar'  => array(array('POST', new Route('accesos/modulo/guardar'))),
+	# accesos / permiso
+	'accesos/permisos'  => array(array('GET', new Route('accesos/permiso/index'))),
+	'accesos/permiso/listar'  => array(array('GET', new Route('accesos/permiso/listar'))),
+	'accesos/permiso/listar_asociados/:id'  => array(array('GET', new Route('accesos/permiso/listar_asociados'))),
+	'accesos/permiso/guardar' => array(array('POST', new Route('accesos/permiso/guardar'))),
+	# accesos / rol
+	'accesos/roles'  => array(array('GET', new Route('accesos/rol/index'))),
+	'accesos/rol/listar'  => array(array('GET', new Route('accesos/rol/listar'))),
+	'accesos/rol/guardar' => array(array('POST', new Route('accesos/rol/guardar'))),
+	'accesos/rol/asociar_permisos' => array(array('POST', new Route('accesos/rol/asociar_permisos'))),
 	# accesos / subtitulo
 	'accesos/subtitulo/listar/:modulo_id' => array(array('GET', new Route('accesos/subtitulo/listar'))),
 	'accesos/subtitulo/guardar' => array(array('GET', new Route('accesos/subtitulo/guardar'))),
-	# accesos / usuarios
+	# accesos / usuario
 	'accesos/usuarios' => array(array('GET', new Route('accesos/usuario/index'))),
 	'accesos/usuario/listar' => array(array('GET', new Route('accesos/usuario/listar'))),
 	'accesos/usuario/ver_accesos' => array(array('GET', new Route('accesos/usuario/ver_accesos'))),
@@ -38,13 +48,4 @@ return array(
 
 /*
     get '/accesos/menu/menu_modulos' => 'accesos/menu#menu_modulos'
-    get '/accesos/permisos' => 'accesos/permiso#index'
-    get '/accesos/permiso/listar' => 'accesos/permiso#listar'
-    post '/accesos/permiso/guardar' => 'accesos/permiso#guardar'
-    get '/accesos/permiso/listar_asociados/:id' => 'accesos/permiso#listar_asociados'
-    get '/accesos/roles' => 'accesos/rol#index'
-    get '/accesos/rol/listar' => 'accesos/rol#listar'
-    post '/accesos/rol/guardar' => 'accesos/rol#guardar'
-    post '/accesos/rol/asociar_permisos' => 'accesos/rol#asociar_permisos'
-    
 */
