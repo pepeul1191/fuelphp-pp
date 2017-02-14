@@ -4,6 +4,7 @@ class Controller_Accesos_Usuario extends Controller
 {
     public function before()
     {
+        echo "HOLA";
         if (Session::get('autenticado') != true){
             Response::redirect(Url::base_url() .'login' , 'refresh');
         }

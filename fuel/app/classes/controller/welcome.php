@@ -1,5 +1,7 @@
 <?php
 
+use \Model\Welcome;
+
 class Controller_Welcome extends Controller
 {
 	public function action_index()
@@ -18,13 +20,23 @@ class Controller_Welcome extends Controller
 
 	public function action_blank()
 	{
-        $view = View::forge('layouts/blank/layout');
-        $view->set_global('title', 'Home');
-        $view->header = View::forge('layouts/blank/header');
-        $view->content = View::forge('welcome/blank');
-        $view->footer = View::forge('layouts/blank/footer');
+		$results = Welcome::get_results();
+		var_dump($results);
 
-        return $view;
+		$usuarios = Welcome::listar_usuarios();
+		var_dump($usuarios);
+
+		exit();
+
+		$view = View::forge('layouts/home.tpl');
+       $view->set_global('title', 'Home');
+       $view->set_global('modulo', 'Accesos');
+       $view->set_global('csss', ['assets/login/css/index']);
+       $view->set_global('partial', 'home/index.tpl');
+
+        $response = new Response($view, 404); //, $headers);
+
+        return $response;
 	}
 
 	public function action_test()
