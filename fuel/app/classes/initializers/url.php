@@ -3,12 +3,12 @@ class Url
 {
     public static function base_url()
     {
-       return 'http://localhost/fuelphp/';
+       return 'http://localhost/fuel/';
     }
 
     public static function statics()
     {
-       return 'http://localhost:8001/dashboard-redmine/';
+       return 'http://localhost/fuel/public/';
     }
 
     public static function get_service($key)

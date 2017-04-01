@@ -9,7 +9,7 @@
  * @copyright  2010 - 2016 Fuel Development Team
  * @link       http://fuelphp.com
  */
-
+header('x-powered-by: PHP');
 /**
  * Set error reporting and display errors settings.  You will want to change these when in production.
  */

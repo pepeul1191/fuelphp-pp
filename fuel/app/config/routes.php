@@ -1,16 +1,17 @@
 <?php
 return array(
 	'_root_'  => 'home/index',  // The default route
-	'_404_'   => 'welcome/404',    // The main 404 route
-	
+	'_404_'   => 'error/index',    // The main 404 route
 	# login
 	'login' => array(array('GET', new Route('login/index'))),
-	'login/acceder' => array(array('POST', new Route('login/acceder'))),
-
+	'login/acceder' => array(array('GET', new Route('login/acceder'))),
+	#error
+	'error/index/:id' => array(array('GET', new Route('error/index'))),
+	'error/access/:id' => array(array('GET', new Route('error/access'))),
+	#demo
 	'hello(/:name)?' => array('welcome/hello', 'name' => 'hello'),
 	'welcome' => array(array('GET', new Route('welcome/blank'))),
 	'accesos' => array(array('GET', new Route('accesos/usuario/index/'))),
-
 	# accesos
 	# accesos / item
 	'accesos/item/listar/:subtitulo_id' => array(array('GET', new Route('accesos/item/listar'))),
