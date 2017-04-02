@@ -36,10 +36,8 @@ class Helper
         */
         foreach ($menus as &$menu) {
             if ($nombre_modulo == $menu->{'nombre'}){
-                //$rpta = $rpta . '<li class="activo"><a href="' . Url::base_url() . $menu->{'url'} . '">' . $menu->{'nombre'} . '</a></li>';
                 $rpta = $rpta . '<li class="dropdown active"><a href="'. Url::base_url() . $menu->{'url'} . '" class="dropdown-toggle" data-toggle="dropdown">' . $menu->{'nombre'} . '</a></li>';
             }else{
-                //$rpta = $rpta . '<li><a href="' . Url::base_url() . $menu->{'url'} . '">' . $menu->{'nombre'} . '</a></li>';
                 $rpta = $rpta . '<li class="dropdown"><a href="'. Url::base_url() . $menu->{'url'} . '" class="dropdown-toggle" data-toggle="dropdown">' . $menu->{'nombre'} . '</a></li>';
             }
         }
@@ -52,11 +50,25 @@ class Helper
         $rest = new Rest(Url::get_service('accesos') . 'item/listar/menu/' . $nombre_modulo);
         $rest->get();
         $menus = json_decode($rest->get_rpta());
-        $rpta = '<ul class="modulos">';
+        /*$rpta = '<ul class="modulos">';
 
         foreach ($menus as &$menu) {
             $rpta = $rpta . '<h3>' . $menu->{'subtitulo'} . '</h3>';
             $rpta = $rpta . '<ul class="items">';
+            foreach ($menu->{'items'} as &$item) {
+                $rpta = $rpta . '<li><a href="' . Url::base_url() . $item->{'url'} . '">' . $item->{'item'} . '</a></li>';
+            }
+            $rpta = $rpta . '</ul>';
+        }
+
+        return $rpta . '</ul>';*/
+
+        $rpta = '<ul class="list-group sidebar-nav-v1" id="sidebar-nav">';
+
+        foreach ($menus as &$menu) {
+            $rpta = $rpta . '<li class="list-group-item list-toggle"><span>' . $menu->{'subtitulo'} .'</span>'; //<li class="list-group-item list-toggle active">
+                           // <a class="accordion-toggle" href="#collapse-forms" data-toggle="collapse" aria-expanded="true">Forms</a>// $rpta . '<h3>' . $menu->{'subtitulo'} . '</h3>'; 
+            $rpta = $rpta . '<ul id="collapse-forms" class="collapse in" aria-expanded="true">';
             foreach ($menu->{'items'} as &$item) {
                 $rpta = $rpta . '<li><a href="' . Url::base_url() . $item->{'url'} . '">' . $item->{'item'} . '</a></li>';
             }

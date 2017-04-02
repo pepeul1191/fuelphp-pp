@@ -13,6 +13,10 @@
       <!-- Fin CSS-->
     </head>
     <body>
+    <!-- Inicio Modal -->
+    <button type="button" class="btn btn-primary btn-lg oculto" data-toggle="modal" data-target="#modal-container"  id="btnModal" >Launch demo modal</button>
+    <div class="modal fade" id="modal-container" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+    <!-- Fin Modal -->
       <header>
           <!-- Inicio Header -->
           <div class="header">
@@ -22,7 +26,6 @@
           <img src="{Url::statics()}unify-pp/img/logo1-default.png" alt="Logo">
         </a>
         <!-- End Logo -->
-
         <!-- Topbar -->
         <div class="topbar">
           <ul class="loginbar pull-right">
@@ -34,7 +37,6 @@
           </ul>
         </div>
         <!-- End Topbar -->
-
         <!-- Toggle get grouped for better mobile display -->
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -64,16 +66,28 @@
         </div><!--/end container-->
       </div><!--/navbar-collapse-->
     </div>
-      <!-- Fin Header -->
-      </header>
-        <div class="body-app">
+    </header>
+      <!-- Fin Header -->  
+       <!-- Inicio Breadcrumbs -->  
+      <div class="breadcrumbs">
+      <div class="container">
+        <h1 class="pull-left">{if isset($title-form)}{$title-form)}{/if}</h1>
+        <ul class="pull-right breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Features</a></li>
+          <li class="active">Form Layouts</li>
+        </ul>
+      </div>
+    </div>
+     <!-- Fin Breadcrumbs -->  
+        <div class="container content">
             <div class="col-md-12" id="workspace">
               <!-- Inicio Yield-->
               {include file=$partial}
               <!-- Fin Yield-->
             </div>
         </div>
-        <div class="footer-v1 navbar-fixed-bottom" >
+        <div class="footer-v1" >
         <div class="footer">
         <div class="container">
           <div class="row">

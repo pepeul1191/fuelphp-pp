@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-04-01 22:05:44
+/* Smarty version 3.1.31, created on 2017-04-01 22:19:38
   from "/home/pepe/Documentos/php/fuel/fuel/app/views/layouts/home.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_58e06a88487610_59219278',
+  'unifunc' => 'content_58e06dcaa735d0_51773654',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2ab9f6e0fdba7b8658a76764ed265d3592442b0f' => 
     array (
       0 => '/home/pepe/Documentos/php/fuel/fuel/app/views/layouts/home.tpl',
-      1 => 1491102342,
+      1 => 1491103175,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_58e06a88487610_59219278 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58e06dcaa735d0_51773654 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -100,8 +100,20 @@ login/cerrar">Salir</a></li>
         </div><!--/end container-->
       </div><!--/navbar-collapse-->
     </div>
-      <!-- Fin Header -->
-      </header>
+    </header>
+      <!-- Fin Header -->  
+       <!-- Inicio breadcrumbs -->  
+      <div class="breadcrumbs">
+      <div class="container">
+        <h1 class="pull-left">Form Layouts</h1>
+        <ul class="pull-right breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Features</a></li>
+          <li class="active">Form Layouts</li>
+        </ul>
+      </div>
+    </div>
+     <!-- Fin breadcrumbs -->  
         <div class="body-app">
             <div class="col-md-12" id="workspace">
               <!-- Inicio Yield-->
@@ -111,7 +123,7 @@ login/cerrar">Salir</a></li>
               <!-- Fin Yield-->
             </div>
         </div>
-        <div class="footer-v1 navbar-fixed-bottom" >
+        <div class="footer-v1" >
         <div class="footer">
         <div class="container">
           <div class="row">

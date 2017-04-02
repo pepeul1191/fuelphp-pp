@@ -4,7 +4,6 @@ class Controller_Accesos_Usuario extends Controller
 {
     public function before()
     {
-        echo "HOLA";
         if (Session::get('autenticado') != true){
             Response::redirect(Url::base_url() .'login' , 'refresh');
         }
@@ -15,6 +14,8 @@ class Controller_Accesos_Usuario extends Controller
         $view = View::forge('layouts/application.tpl');
         $view->set_global('title', 'Accesos/Usuarios');
         $view->set_global('modulo', 'Accesos');
+        $view->set_global('titleForm', 'Gestione los Usuarios del Sistema');
+        $view->set_global('rutaForm', 'Accesos / Usuarios / Listado');
         $view->set_global('csss', ['bower_components/swp-plugins/assets/css/mootools.grid']);
         $view->set_global('jss', ['bower_components/swp-plugins/assets/js/mootools.dao', 'bower_components/swp-plugins/assets/js/mootools.form', 'bower_components/swp-plugins/assets/js/mootools.observer', 'bower_components/swp-plugins/assets/js/mootools.grid', 'bower_components/swp-plugins/assets/js/mootools.chain', 'assets/accesos/usuarios/js/index']);
         $view->set_global('partial', 'accesos/usuario/index.tpl');
