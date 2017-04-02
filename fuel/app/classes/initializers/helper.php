@@ -31,12 +31,16 @@ class Helper
         $rest->get();
         $menus = json_decode($rest->get_rpta());
         $rpta = '';
-
+        /*
+        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Home</a></li>
+        */
         foreach ($menus as &$menu) {
             if ($nombre_modulo == $menu->{'nombre'}){
-                $rpta = $rpta . '<li class="activo"><a href="' . Url::base_url() . $menu->{'url'} . '">' . $menu->{'nombre'} . '</a></li>';
+                //$rpta = $rpta . '<li class="activo"><a href="' . Url::base_url() . $menu->{'url'} . '">' . $menu->{'nombre'} . '</a></li>';
+                $rpta = $rpta . '<li class="dropdown active"><a href="'. Url::base_url() . $menu->{'url'} . '" class="dropdown-toggle" data-toggle="dropdown">' . $menu->{'nombre'} . '</a></li>';
             }else{
-                $rpta = $rpta . '<li><a href="' . Url::base_url() . $menu->{'url'} . '">' . $menu->{'nombre'} . '</a></li>';
+                //$rpta = $rpta . '<li><a href="' . Url::base_url() . $menu->{'url'} . '">' . $menu->{'nombre'} . '</a></li>';
+                $rpta = $rpta . '<li class="dropdown"><a href="'. Url::base_url() . $menu->{'url'} . '" class="dropdown-toggle" data-toggle="dropdown">' . $menu->{'nombre'} . '</a></li>';
             }
         }
 

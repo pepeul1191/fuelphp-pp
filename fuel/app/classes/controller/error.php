@@ -32,7 +32,6 @@ class Controller_Error extends Controller
                 break;
         }
 
-
         $view = View::forge('layouts/blank.tpl');
         $view->set_global('title', 'Error');
         $view->set_global('error', $error);
