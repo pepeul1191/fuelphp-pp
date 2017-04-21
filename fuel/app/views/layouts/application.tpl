@@ -9,7 +9,7 @@
       <!-- Inicio CSS-->
       <link rel="stylesheet" type="text/css" href="{Url::statics()}bower_components/bootstrap/dist/css/bootstrap.min.css" />
       <link rel="stylesheet" type="text/css" href="{Url::statics()}bower_components/font-awesome/css/font-awesome.min.css" />
-      <link rel="stylesheet" type="text/css" href="{Url::statics()}unify-pp/css/styles.css" />
+      <link rel="stylesheet" type="text/css" href="{Url::statics()}bower_components/unify-pp/css/styles.css" />
       {if isset($csss)}{Helper::load_css($csss)}{/if}
       <!-- Fin CSS-->
     </head>
@@ -23,8 +23,8 @@
           <div class="header">
       <div class="container">
         <!-- Logo -->
-        <a class="logo" href="index.html">
-          <img src="{Url::statics()}unify-pp/img/logo1-default.png" alt="Logo">
+        <a class="logo" href="{Url::base_url()}">
+          <img src="{Url::statics()}bower_components/unify-pp/img/logo1-default.png" alt="Logo">
         </a>
         <!-- End Logo -->
         <!-- Topbar -->
@@ -96,7 +96,7 @@
           <div class="row">
             <!-- About -->
             <div class="col-md-3 md-margin-bottom-40">
-              <a href="index.html"><img id="logo-footer" class="footer-logo" src="{Url::statics()}unify-pp/img/logo2-default.png" alt=""></a>
+              <a href="index.html"><img id="logo-footer" class="footer-logo" src="{Url::statics()}bower_components/unify-pp/img/logo2-default.png" alt=""></a>
               <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
               <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
             </div><!--/col-md-3-->
@@ -215,7 +215,7 @@
       <script src="{Url::statics()}bower_components/swp-plugins/assets/js/mootools-core.min.js" type="text/javascript"></script>
       <script src="{Url::statics()}bower_components/swp-plugins/assets/js/mootools.min.js" type="text/javascript"></script>
       <script src="{Url::statics()}bower_components/swp-plugins/assets/js/mootools-interfaces.min.js" type="text/javascript"></script>
-      <script src="{Url::statics()}unify-pp/js/app.js" type="text/javascript"></script>
+      <script src="{Url::statics()}bower_components/unify-pp/js/app.js" type="text/javascript"></script>
       <script src="{Url::statics()}assets/site/js/app.js" type="text/javascript"></script>
       {if isset($jss)}{Helper::load_js($jss)}{/if}
       <!-- Fin JS-->

@@ -17,6 +17,8 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "jquery": "^2.2.4",
-    "font-awesome": "fontawesome#^4.7.0"
+    "font-awesome": "fontawesome#^4.7.0",
+    "unify-pp": "*",
+    "swp-plugins": "*"
   }
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-04-01 23:59:38
+/* Smarty version 3.1.31, created on 2017-04-21 10:42:05
   from "/home/pepe/Documentos/php/fuel/fuel/app/views/layouts/application.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_58e0853a2618c5_66831838',
+  'unifunc' => 'content_58fa284d53f5f4_06325320',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3c94e4f0910af955f5ba3fdfb77dd0a08e77a861' => 
     array (
       0 => '/home/pepe/Documentos/php/fuel/fuel/app/views/layouts/application.tpl',
-      1 => 1491109175,
+      1 => 1492789322,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_58e0853a2618c5_66831838 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58fa284d53f5f4_06325320 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -42,7 +42,7 @@ bower_components/bootstrap/dist/css/bootstrap.min.css" />
       <link rel="stylesheet" type="text/css" href="<?php echo Url::statics();?>
 bower_components/font-awesome/css/font-awesome.min.css" />
       <link rel="stylesheet" type="text/css" href="<?php echo Url::statics();?>
-unify-pp/css/styles.css" />
+bower_components/unify-pp/css/styles.css" />
       <?php if (isset($_smarty_tpl->tpl_vars['csss']->value)) {
 echo Helper::load_css($_smarty_tpl->tpl_vars['csss']->value);
 }?>
@@ -58,9 +58,10 @@ echo Helper::load_css($_smarty_tpl->tpl_vars['csss']->value);
           <div class="header">
       <div class="container">
         <!-- Logo -->
-        <a class="logo" href="index.html">
+        <a class="logo" href="<?php echo Url::base_url();?>
+">
           <img src="<?php echo Url::statics();?>
-unify-pp/img/logo1-default.png" alt="Logo">
+bower_components/unify-pp/img/logo1-default.png" alt="Logo">
         </a>
         <!-- End Logo -->
         <!-- Topbar -->
@@ -143,7 +144,7 @@ echo $_smarty_tpl->tpl_vars['rutaForm']->value;
             <!-- About -->
             <div class="col-md-3 md-margin-bottom-40">
               <a href="index.html"><img id="logo-footer" class="footer-logo" src="<?php echo Url::statics();?>
-unify-pp/img/logo2-default.png" alt=""></a>
+bower_components/unify-pp/img/logo2-default.png" alt=""></a>
               <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
               <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
             </div><!--/col-md-3-->
@@ -282,7 +283,7 @@ bower_components/swp-plugins/assets/js/mootools-interfaces.min.js" type="text/ja
 >
       <?php echo '<script'; ?>
  src="<?php echo Url::statics();?>
-unify-pp/js/app.js" type="text/javascript"><?php echo '</script'; ?>
+bower_components/unify-pp/js/app.js" type="text/javascript"><?php echo '</script'; ?>
 >
       <?php echo '<script'; ?>
  src="<?php echo Url::statics();?>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-04-01 22:19:38
+/* Smarty version 3.1.31, created on 2017-04-21 10:42:06
   from "/home/pepe/Documentos/php/fuel/fuel/app/views/layouts/home.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_58e06dcaa735d0_51773654',
+  'unifunc' => 'content_58fa284e37a1a1_27044491',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2ab9f6e0fdba7b8658a76764ed265d3592442b0f' => 
     array (
       0 => '/home/pepe/Documentos/php/fuel/fuel/app/views/layouts/home.tpl',
-      1 => 1491103175,
+      1 => 1492789314,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_58e06dcaa735d0_51773654 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58fa284e37a1a1_27044491 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,24 +38,28 @@ bower_components/bootstrap/dist/css/bootstrap.min.css" />
       <link rel="stylesheet" type="text/css" href="<?php echo Url::statics();?>
 bower_components/font-awesome/css/font-awesome.min.css" />
       <link rel="stylesheet" type="text/css" href="<?php echo Url::statics();?>
-unify-pp/css/styles.css" />
+bower_components/unify-pp/css/styles.css" />
       <?php if (isset($_smarty_tpl->tpl_vars['csss']->value)) {
 echo Helper::load_css($_smarty_tpl->tpl_vars['csss']->value);
 }?>
       <!-- Fin CSS-->
     </head>
     <body>
+    <!-- Inicio Modal -->
+    <button type="button" class="btn btn-primary btn-lg oculto" data-toggle="modal" data-target="#modal-container"  id="btnModal" >Launch demo modal</button>
+    <div class="modal fade" id="modal-container" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"></div>
+    <!-- Fin Modal -->
       <header>
           <!-- Inicio Header -->
           <div class="header">
       <div class="container">
         <!-- Logo -->
-        <a class="logo" href="index.html">
+        <a class="logo" href="<?php echo Url::base_url();?>
+">
           <img src="<?php echo Url::statics();?>
-unify-pp/img/logo1-default.png" alt="Logo">
+bower_components/unify-pp/img/logo1-default.png" alt="Logo">
         </a>
         <!-- End Logo -->
-
         <!-- Topbar -->
         <div class="topbar">
           <ul class="loginbar pull-right">
@@ -69,7 +73,6 @@ login/cerrar">Salir</a></li>
           </ul>
         </div>
         <!-- End Topbar -->
-
         <!-- Toggle get grouped for better mobile display -->
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -102,10 +105,12 @@ login/cerrar">Salir</a></li>
     </div>
     </header>
       <!-- Fin Header -->  
-       <!-- Inicio breadcrumbs -->  
+       <!-- Inicio Breadcrumbs -->  
       <div class="breadcrumbs">
       <div class="container">
-        <h1 class="pull-left">Form Layouts</h1>
+        <h1 class="pull-left"><?php if (isset($_smarty_tpl->tpl_vars['title_form']->value)) {
+echo $_smarty_tpl->tpl_vars['title_form']->value;
+}?></h1>
         <ul class="pull-right breadcrumb">
           <li><a href="index.html">Home</a></li>
           <li><a href="">Features</a></li>
@@ -113,8 +118,8 @@ login/cerrar">Salir</a></li>
         </ul>
       </div>
     </div>
-     <!-- Fin breadcrumbs -->  
-        <div class="body-app">
+     <!-- Fin Breadcrumbs -->  
+        <div class="container content">
             <div class="col-md-12" id="workspace">
               <!-- Inicio Yield-->
               <?php $_smarty_tpl->_subTemplateRender($_smarty_tpl->tpl_vars['partial']->value, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
@@ -269,7 +274,7 @@ bower_components/swp-plugins/assets/js/mootools-interfaces.min.js" type="text/ja
 >
       <?php echo '<script'; ?>
  src="<?php echo Url::statics();?>
-unify-pp/js/app.js" type="text/javascript"><?php echo '</script'; ?>
+bower_components/unify-pp/js/app.js" type="text/javascript"><?php echo '</script'; ?>
 >
       <?php echo '<script'; ?>
  src="<?php echo Url::statics();?>

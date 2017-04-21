@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-03-31 20:08:34
+/* Smarty version 3.1.31, created on 2017-04-21 09:36:03
   from "/home/pepe/Documentos/php/fuel/fuel/app/views/layouts/blank.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_58defd92dd99d2_18043970',
+  'unifunc' => 'content_58fa18d3c9cde5_95934896',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd82479f073bae98d6b519c1e6bdfe3c536272d9d' => 
     array (
       0 => '/home/pepe/Documentos/php/fuel/fuel/app/views/layouts/blank.tpl',
-      1 => 1491008912,
+      1 => 1492784143,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_58defd92dd99d2_18043970 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58fa18d3c9cde5_95934896 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -39,7 +39,7 @@ bower_components/bootstrap/dist/css/bootstrap.min.css" />
       <link rel="stylesheet" type="text/css" href="<?php echo Url::statics();?>
 bower_components/font-awesome/css/font-awesome.min.css" />
       <link rel="stylesheet" type="text/css" href="<?php echo Url::statics();?>
-unify-pp/css/styles.css" />
+bower_components/unify-pp/css/styles.css" />
       <?php if (isset($_smarty_tpl->tpl_vars['csss']->value)) {
 echo Helper::load_css($_smarty_tpl->tpl_vars['csss']->value);
 }?>

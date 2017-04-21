@@ -35,7 +35,7 @@ class Controller_Error extends Controller
         $view = View::forge('layouts/blank.tpl');
         $view->set_global('title', 'Error');
         $view->set_global('error', $error);
-        $view->set_global('csss', ['assets/error/css/index']);
+        $view->set_global('csss', ['assets/error/css/access']);
         $view->set_global('partial', 'error/index.tpl');
 
         return $view;

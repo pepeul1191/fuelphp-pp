@@ -3,12 +3,12 @@ class Url
 {
     public static function base_url()
     {
-       return 'http://localhost/fuel/';
+       return 'http://localhost:3000/';
     }
 
     public static function statics()
     {
-       return 'http://localhost/fuel/public/';
+       return 'http://localhost:8001/html-unify/';
     }
 
     public static function get_service($key)
