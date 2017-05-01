@@ -11,6 +11,8 @@
  */
 header('x-powered-by: PHP');
 header('Server: Ubuntu');
+header("Access-Control-Allow-Origin: *");
+header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
 /**
  * Set error reporting and display errors settings.  You will want to change these when in production.
  */

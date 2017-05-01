@@ -4,7 +4,7 @@ return array(
 	'_404_'   => 'error/index',    // The main 404 route
 	# login
 	'login' => array(array('GET', new Route('login/index'))),
-	'login/acceder' => array(array('GET', new Route('login/acceder'))),
+	'login/acceder' => array(array('OPTIONS', new Route('login/acceder'))),
 	#error
 	'error/index/:id' => array(array('GET', new Route('error/index'))),
 	'error/access/:id' => array(array('GET', new Route('error/access'))),
