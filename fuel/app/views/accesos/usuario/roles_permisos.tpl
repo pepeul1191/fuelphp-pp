@@ -1,28 +1,3 @@
-<!--
-<div class="modal-body" style="padding-bottom: 15px;">
-	<div class="row">
-		<div class="col-md-6 workspace-modal">
-			<form action="#" class="sky-form-modal">
-				<header>Permisos del Usuario</header>
-				<fieldset>
-				<label class="oculto" id="id_rol"></label>
-				<label class="texto-der oculto" id="txtMensajeRptaModal"></label>
-				<table class="list issues" style="" id="tablaPermisos"></table>
-				</fieldset>
-			</form>
-		</div>
-		<div class="col-md-6 workspace-modal">
-			<form action="#" class="sky-form-modal">
-				<header>Roles del Usuario</header>
-				<fieldset>
-					<label class="texto-der oculto" id="txtMensajeRpta"></label>
-					<table class="list issues" style="" id="tablaRoles"></table>
-				</fieldset>
-			</form>
-		</div>
-	</div>
-</div>
--->
 <div class="modal-body" style="padding-bottom: 15px;">
 	<div class="row">
 		<div class="col-md-7 workspace">

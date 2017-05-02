@@ -12,6 +12,7 @@ return array(
 	'hello(/:name)?' => array('welcome/hello', 'name' => 'hello'),
 	'welcome' => array(array('GET', new Route('welcome/blank'))),
 	'accesos' => array(array('GET', new Route('accesos/usuario/index/'))),
+	
 	# accesos
 	# accesos / item
 	'accesos/item/listar/:subtitulo_id' => array(array('GET', new Route('accesos/item/listar'))),
@@ -31,6 +32,10 @@ return array(
 	'accesos/rol/listar'  => array(array('GET', new Route('accesos/rol/listar'))),
 	'accesos/rol/guardar' => array(array('POST', new Route('accesos/rol/guardar'))),
 	'accesos/rol/asociar_permisos' => array(array('POST', new Route('accesos/rol/asociar_permisos'))),
+	# accesos / sistema
+	'accesos/sistemas'  => array(array('GET', new Route('accesos/sistema/index'))),
+	'accesos/sistema/listar'  => array(array('GET', new Route('accesos/sistema/listar'))),
+	'accesos/sistema/guardar'  => array(array('POST', new Route('accesos/sistema/guardar'))),
 	# accesos / subtitulo
 	'accesos/subtitulo/listar/:modulo_id' => array(array('GET', new Route('accesos/subtitulo/listar'))),
 	'accesos/subtitulo/guardar' => array(array('GET', new Route('accesos/subtitulo/guardar'))),
