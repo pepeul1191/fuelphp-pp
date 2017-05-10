@@ -216,7 +216,6 @@
       <script src="{Url::statics()}bower_components/swp-plugins/assets/js/mootools.min.js" type="text/javascript"></script>
       <script src="{Url::statics()}bower_components/swp-plugins/assets/js/mootools-interfaces.min.js" type="text/javascript"></script>
       <script src="{Url::statics()}bower_components/unify-pp/js/app.js" type="text/javascript"></script>
-      <script src="{Url::statics()}assets/site/js/app.js" type="text/javascript"></script>
       {if isset($jss)}{Helper::load_js($jss)}{/if}
       <!-- Fin JS-->
     </body>

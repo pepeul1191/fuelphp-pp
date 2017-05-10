@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-04-21 10:42:05
+/* Smarty version 3.1.31, created on 2017-05-09 14:34:20
   from "/home/pepe/Documentos/php/fuel/fuel/app/views/layouts/application.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_58fa284d53f5f4_06325320',
+  'unifunc' => 'content_591219bc7213b7_88006777',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3c94e4f0910af955f5ba3fdfb77dd0a08e77a861' => 
     array (
       0 => '/home/pepe/Documentos/php/fuel/fuel/app/views/layouts/application.tpl',
-      1 => 1492789322,
+      1 => 1494358458,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_58fa284d53f5f4_06325320 (Smarty_Internal_Template $_smarty_tpl) {
+function content_591219bc7213b7_88006777 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -284,10 +284,6 @@ bower_components/swp-plugins/assets/js/mootools-interfaces.min.js" type="text/ja
       <?php echo '<script'; ?>
  src="<?php echo Url::statics();?>
 bower_components/unify-pp/js/app.js" type="text/javascript"><?php echo '</script'; ?>
->
-      <?php echo '<script'; ?>
- src="<?php echo Url::statics();?>
-assets/site/js/app.js" type="text/javascript"><?php echo '</script'; ?>
 >
       <?php if (isset($_smarty_tpl->tpl_vars['jss']->value)) {
 echo Helper::load_js($_smarty_tpl->tpl_vars['jss']->value);
