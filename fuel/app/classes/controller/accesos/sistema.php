@@ -33,11 +33,40 @@ class Controller_Accesos_Sistema extends Controller
 
     public function action_guardar()
     {
-        $data = Input::post('data');
-        //echo Url::get_service('accesos') . 'sistema/guardar?data=' . $data; exit(); 
+        $data = Input::post('data'); 
         $rest = new Rest(Url::get_service('accesos') . 'sistema/guardar?data=' . $data);
         
         return $rest->post();
+    }
+
+    public function action_ver_menu_modal()
+    {
+        $view = View::forge('layouts/modal_large.tpl');
+        $view->set_global('titulo_modal', 'Gestione el Menú del Sistema');
+        $view->set_global('jss_modal', ['assets/accesos/sistema/js/menu']);
+        $view->set_global('partial_modal', 'accesos/sistema/menu.tpl');
+
+        return $view;
+    }
+
+    public function action_ver_permiso_modal()
+    {
+        $view = View::forge('layouts/modal_medium.tpl');
+        $view->set_global('titulo_modal', 'Gestione los Permisos del Sistema');
+        $view->set_global('jss_modal', ['assets/accesos/sistema/js/permiso']);
+        $view->set_global('partial_modal', 'accesos/sistema/permiso.tpl');
+
+        return $view;
+    }
+
+    public function action_ver_rol_modal()
+    {
+        $view = View::forge('layouts/modal_large.tpl');
+        $view->set_global('titulo_modal', 'Gestione el Menú del Sistema');
+        $view->set_global('jss_modal', ['assets/accesos/sistema/js/rol']);
+        $view->set_global('partial_modal', 'accesos/sistema/rol.tpl');
+
+        return $view;
     }
 }
 

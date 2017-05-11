@@ -11,11 +11,11 @@
  */
 header('x-powered-by: PHP');
 header('Server: Ubuntu');
-header("Access-Control-Allow-Origin: *");
-header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
+
 /**
  * Set error reporting and display errors settings.  You will want to change these when in production.
  */
+
 error_reporting(-1);
 ini_set('display_errors', 1);
 
@@ -45,6 +45,7 @@ defined('FUEL_START_MEM') or define('FUEL_START_MEM', memory_get_usage());
 
 //Usado para initializers/cipher.php
 define('HASH_KEY','50631f4f8ba97');
+define('APP_NAME','SISTEMA_ACCESOS');
 
 // Load in the Fuel autoloader
 if ( ! file_exists(COREPATH.'classes'.DIRECTORY_SEPARATOR.'autoloader.php'))

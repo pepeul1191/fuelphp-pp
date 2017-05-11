@@ -27,7 +27,7 @@ class Helper
 
     public static function menu_modulos($nombre_modulo)
     {
-        $rest = new Rest(Url::get_service('accesos') . 'modulo/listar');
+        $rest = new Rest(Url::get_service('accesos') . 'modulo/listar_menu?sistema=' . APP_NAME);
         $rest->get();
         $menus = json_decode($rest->get_rpta());
         $rpta = '';
@@ -47,7 +47,7 @@ class Helper
 
     public static function menu_submodulos($nombre_modulo)
     {
-        $rest = new Rest(Url::get_service('accesos') . 'item/listar/menu/' . $nombre_modulo);
+        $rest = new Rest(Url::get_service('accesos') . 'item/listar/menu/?sistema=' . APP_NAME . '&nombre_modulo=' . $nombre_modulo);
         $rest->get();
         $menus = json_decode($rest->get_rpta());
         /*$rpta = '<ul class="modulos">';

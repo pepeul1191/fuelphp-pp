@@ -11,7 +11,8 @@ class Controller_Accesos_Modulo extends Controller
 
     public function action_listar()
     {
-        $rest = new Rest(Url::get_service('accesos') . 'modulo/listar');
+        $sistema_id = $this->param('sistema_id');
+        $rest = new Rest(Url::get_service('accesos') . 'modulo/listar/' . $sistema_id);
         $rest->get();
 
         return $rest->get_rpta();

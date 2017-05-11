@@ -23,7 +23,8 @@ class Rest
        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
        curl_setopt($curl, CURLOPT_POST, true);
        curl_setopt($curl, CURLOPT_POSTFIELDS, $curl_post_data);
-       $this->_rpta = curl_exec($curl);
+       curl_setopt($curl, CURLOPT_ENCODING, 'UTF-8');
+       $this->_rpta = utf8_decode(curl_exec($curl));
        curl_close($curl);
 
        return $this->_rpta;
