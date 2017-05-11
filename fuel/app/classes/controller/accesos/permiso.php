@@ -41,8 +41,9 @@ class Controller_Accesos_Permiso extends Controller
 
     public function action_listar_asociados()
     {
-        $id_rol = $this->param('id');
-        $rest = new Rest(Url::get_service('accesos') . 'permiso/listar_asociados/' . $id_rol);
+        $id_rol = $this->param('id_rol');
+        $sistema_id = $this->param('sistema_id');
+        $rest = new Rest(Url::get_service('accesos') . 'permiso/listar_asociados/' . $sistema_id . '/' . $id_rol);
 
         return $rest->get();
     }

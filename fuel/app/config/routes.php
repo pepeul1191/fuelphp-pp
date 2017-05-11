@@ -25,11 +25,11 @@ return array(
 	# accesos / permiso
 	'accesos/permisos'  => array(array('GET', new Route('accesos/permiso/index'))),
 	'accesos/permiso/listar/:sistema_id'  => array(array('GET', new Route('accesos/permiso/listar'))),
-	'accesos/permiso/listar_asociados/:id'  => array(array('GET', new Route('accesos/permiso/listar_asociados'))),
+	'accesos/permiso/listar_asociados/:sistema_id/:id_rol'  => array(array('GET', new Route('accesos/permiso/listar_asociados'))),
 	'accesos/permiso/guardar' => array(array('POST', new Route('accesos/permiso/guardar'))),
 	# accesos / rol
 	'accesos/roles'  => array(array('GET', new Route('accesos/rol/index'))),
-	'accesos/rol/listar'  => array(array('GET', new Route('accesos/rol/listar'))),
+	'accesos/rol/listar/:sistema_id'  => array(array('GET', new Route('accesos/rol/listar'))),
 	'accesos/rol/guardar' => array(array('POST', new Route('accesos/rol/guardar'))),
 	'accesos/rol/asociar_permisos' => array(array('POST', new Route('accesos/rol/asociar_permisos'))),
 	# accesos / sistema 
