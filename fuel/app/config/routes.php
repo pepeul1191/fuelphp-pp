@@ -24,7 +24,7 @@ return array(
 	'accesos/modulo/guardar'  => array(array('POST', new Route('accesos/modulo/guardar'))),
 	# accesos / permiso
 	'accesos/permisos'  => array(array('GET', new Route('accesos/permiso/index'))),
-	'accesos/permiso/listar'  => array(array('GET', new Route('accesos/permiso/listar'))),
+	'accesos/permiso/listar/:sistema_id'  => array(array('GET', new Route('accesos/permiso/listar'))),
 	'accesos/permiso/listar_asociados/:id'  => array(array('GET', new Route('accesos/permiso/listar_asociados'))),
 	'accesos/permiso/guardar' => array(array('POST', new Route('accesos/permiso/guardar'))),
 	# accesos / rol

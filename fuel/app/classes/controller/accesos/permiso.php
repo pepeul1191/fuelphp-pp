@@ -25,7 +25,8 @@ class Controller_Accesos_Permiso extends Controller
 
     public function action_listar()
     {
-        $rest = new Rest(Url::get_service('accesos') . 'permiso/listar');
+        $sistema_id = $this->param('sistema_id');
+        $rest = new Rest(Url::get_service('accesos') . 'permiso/listar/' . $sistema_id);
         
         return $rest->get();
     }
