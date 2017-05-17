@@ -11,8 +11,8 @@ class Controller_Maestros_Distrito extends Controller
 
     public function action_listar()
     {
-        $provinvia_id = $this->param('provinvia_id');
-        $rest = new Rest(Url::get_service('ubicaciones') . 'distrito/listar/' . $provinvia_id);
+        $provincia_id = $this->param('provincia_id');
+        $rest = new Rest(Url::get_service('ubicaciones') . 'distrito/listar/' . $provincia_id);
         
         return $rest->get();
     }
