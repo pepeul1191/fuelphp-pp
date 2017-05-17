@@ -13,7 +13,11 @@ class Url
 
     public static function get_service($key)
     {
-        $services = array('accesos' => 'http://localhost/accesos/', 'acl' => 'http://localhost:3003/');
+        $services = array(
+            'accesos' => 'http://localhost/accesos/', 
+            'acl' => 'http://localhost:3003/',
+            'ubicaciones' => 'http://localhost/ubicaciones/',
+        );
         return $services[$key];
     }
 }

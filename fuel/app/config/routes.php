@@ -53,6 +53,19 @@ return array(
 	'accesos/usuario/listar_roles/:usuario_id' => array(array('GET', new Route('accesos/usuario/listar_roles'))),
 	'accesos/usuario/asociar_permisos' => array(array('POST', new Route('accesos/usuario/asociar_permisos'))),
 	'accesos/usuario/asociar_roles' => array(array('POST', new Route('accesos/usuario/asociar_roles'))),
+
+	# maestros
+	'maestros' => array(array('GET', new Route('maestros/departamento/index'))),
+	# maestros/ departamentos
+	'maestros/ubicaciones_peru' => array(array('GET', new Route('maestros/departamento/index'))),
+	'maestros/departamentos' => array(array('GET', new Route('maestros/departamento/listar'))),
+	'maestros/departamento/guardar' => array(array('POST', new Route('maestros/departamento/guardar'))),
+	# maestros/ provincias
+	'maestros/provincias/:departamento_id' => array(array('GET', new Route('maestros/provincia/listar'))),
+	'maestros/provincia/guardar' => array(array('POST', new Route('maestros/provincia/guardar'))),
+	# maestros/ distritos
+	'maestros/distritos/:provincia_id' => array(array('GET', new Route('maestros/distrito/listar'))),
+	'maestros/distrito/guardar' => array(array('POST', new Route('maestros/distrito/guardar'))),
 );
 
 /*
