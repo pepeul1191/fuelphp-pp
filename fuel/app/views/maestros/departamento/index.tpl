@@ -21,4 +21,17 @@
 		</div>
 		</fieldset>
 	</form>
+	<br>
+	<form action="#" class="sky-form">
+		<header>Prueba del Buscar con Autocompletar de los Distritos / Provincia / Departamento</header>
+		<fieldset>
+			<div class="col-md-4 workspace">
+				<div class="form-group">
+				    <label for="txtDistrito">Ingrese el distirto a buscar - distrito_id : </label><label id="idDistrito"></label>
+				    <input type="text" class="form-control mootools" id="txtDistrito" placeholder="Distrito , Provincia, Departamento" operacion="EscribirAutoComplete" objeto="autocompleteDistritos">
+				    <ul id="autoDistrito" class="oculto sugerencia-contenedor"></ul>
+				  </div>
+			</div>
+		</fieldset>
+	</form>
 </div>

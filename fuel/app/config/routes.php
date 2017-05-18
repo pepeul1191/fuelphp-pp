@@ -66,6 +66,7 @@ return array(
 	# maestros/ distritos
 	'maestros/distritos/:provincia_id' => array(array('GET', new Route('maestros/distrito/listar'))),
 	'maestros/distrito/guardar' => array(array('POST', new Route('maestros/distrito/guardar'))),
+	'maestros/distrito/buscar/:texto' => array(array('POST', new Route('maestros/distrito/buscar'))),
 );
 
 /*

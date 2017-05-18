@@ -5,7 +5,7 @@ class Controller_Maestros_Distrito extends Controller
     public function before()
     {
         if (Session::get('autenticado') != true){
-            Response::redirect(Url::base_url() .'login' , 'refresh');
+            //Response::redirect(Url::base_url() .'login' , 'refresh');
         }
     }
 
@@ -21,6 +21,14 @@ class Controller_Maestros_Distrito extends Controller
     {
         $data = Input::post('data'); 
         $rest = new Rest(Url::get_service('ubicaciones') . 'distrito/guardar?data=' . $data);
+
+        return $rest->post();
+    }
+
+    public function action_buscar()
+    {
+        $texto = $this->param('texto');
+        $rest = new Rest(Url::get_service('ubicaciones') . 'distrito/buscar?texto=' . $texto);
 
         return $rest->post();
     }

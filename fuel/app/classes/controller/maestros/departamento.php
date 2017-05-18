@@ -16,8 +16,8 @@ class Controller_Maestros_Departamento extends Controller
         $view->set_global('modulo', 'Maestros');
         $view->set_global('titleForm', 'Gestione las Ubicaciones del Perú');
         $view->set_global('rutaForm', 'Maestros / Ubicaciones / Perú');
-        $view->set_global('csss', ['bower_components/swp-plugins/assets/css/mootools.grid']);
-        $view->set_global('jss', ['bower_components/swp-plugins/assets/js/mootools.dao', 'bower_components/swp-plugins/assets/js/mootools.form', 'bower_components/swp-plugins/assets/js/mootools.observer', 'bower_components/swp-plugins/assets/js/mootools.grid', 'bower_components/swp-plugins/assets/js/mootools.chain', 'assets/maestros/departamento/js/index']);
+        $view->set_global('csss', ['bower_components/swp-plugins/assets/css/mootools.grid', 'bower_components/swp-plugins/assets/css/mootools.autocomplete']);
+        $view->set_global('jss', ['bower_components/swp-plugins/assets/js/mootools.dao', 'bower_components/swp-plugins/assets/js/mootools.form', 'bower_components/swp-plugins/assets/js/mootools.observer', 'bower_components/swp-plugins/assets/js/mootools.grid', 'bower_components/swp-plugins/assets/js/mootools.chain', 'bower_components/swp-plugins/assets/js/mootools.autocomplete','assets/maestros/departamento/js/index']);
         $view->set_global('partial', 'maestros/departamento/index.tpl');
 
         return $view;
