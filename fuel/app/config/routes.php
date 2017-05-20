@@ -4,7 +4,7 @@ return array(
 	'_404_'   => 'error/index',    // The main 404 route
 	# login
 	'login' => array(array('GET', new Route('login/index'))),
-	'login/acceder' => array(array('OPTIONS', new Route('login/acceder'))),
+	'login/acceder' => array(array('POST', new Route('login/acceder'))),
 	#error
 	'error/index/:id' => array(array('GET', new Route('error/index'))),
 	'error/access/:id' => array(array('GET', new Route('error/access'))),
@@ -67,6 +67,9 @@ return array(
 	'maestros/distritos/:provincia_id' => array(array('GET', new Route('maestros/distrito/listar'))),
 	'maestros/distrito/guardar' => array(array('POST', new Route('maestros/distrito/guardar'))),
 	'maestros/distrito/buscar/:texto' => array(array('POST', new Route('maestros/distrito/buscar'))),
+
+	#administracion
+	'administracion' => array(array('GET', new Route('administracion/empresa/index'))),
 );
 
 /*

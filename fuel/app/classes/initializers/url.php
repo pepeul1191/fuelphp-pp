@@ -17,6 +17,7 @@ class Url
             'accesos' => 'http://localhost/accesos/', 
             'acl' => 'http://localhost:3003/',
             'ubicaciones' => 'http://localhost/ubicaciones/',
+            'administracion' => 'http://localhost/administracion/',
         );
         return $services[$key];
     }

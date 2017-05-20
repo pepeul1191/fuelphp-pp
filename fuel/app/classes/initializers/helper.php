@@ -50,18 +50,6 @@ class Helper
         $rest = new Rest(Url::get_service('accesos') . 'item/listar/menu/?sistema=' . APP_NAME . '&nombre_modulo=' . $nombre_modulo);
         $rest->get();
         $menus = json_decode($rest->get_rpta());
-        /*$rpta = '<ul class="modulos">';
-
-        foreach ($menus as &$menu) {
-            $rpta = $rpta . '<h3>' . $menu->{'subtitulo'} . '</h3>';
-            $rpta = $rpta . '<ul class="items">';
-            foreach ($menu->{'items'} as &$item) {
-                $rpta = $rpta . '<li><a href="' . Url::base_url() . $item->{'url'} . '">' . $item->{'item'} . '</a></li>';
-            }
-            $rpta = $rpta . '</ul>';
-        }
-
-        return $rpta . '</ul>';*/
 
         $rpta = '<ul class="list-group sidebar-nav-v1" id="sidebar-nav">';
 
@@ -76,6 +64,7 @@ class Helper
         }
 
         return $rpta . '</ul>';
+        //return Url::get_service('accesos') . 'item/listar/menu/?sistema=' . APP_NAME . '&nombre_modulo=' . $nombre_modulo;
     }
 }
 ?>
