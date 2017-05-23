@@ -67,6 +67,10 @@ return array(
 	'maestros/distritos/:provincia_id' => array(array('GET', new Route('maestros/distrito/listar'))),
 	'maestros/distrito/guardar' => array(array('POST', new Route('maestros/distrito/guardar'))),
 	'maestros/distrito/buscar/:texto' => array(array('POST', new Route('maestros/distrito/buscar'))),
+	# maestros/ tipos_almacen
+	'maestros/tipos_almacen' => array(array('GET', new Route('maestros/tiposAlmacen/index'))),
+	'maestros/tipos_almacen/listar' => array(array('GET', new Route('maestros/tiposAlmacen/listar'))),
+	'maestros/tipos_almacen/guardar' => array(array('POST', new Route('maestros/tiposAlmacen/guardar'))),
 
 	#administracion
 	'administracion' => array(array('GET', new Route('administracion/empresa/index'))),
@@ -74,5 +78,6 @@ return array(
 	'administracion/empresa' => array(array('GET', new Route('administracion/empresa/index'))),
 	'administracion/empresa/guardar' => array(array('POST', new Route('administracion/empresa/guardar'))),
 	#sede
-
+	'administracion/sede/listar/:empresa_id' => array(array('GET', new Route('administracion/sede/listar'))),
+	'administracion/sede/guardar' => array(array('POST', new Route('administracion/sede/guardar'))),
 );
