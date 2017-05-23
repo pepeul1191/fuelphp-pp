@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-05-20 12:55:59
+/* Smarty version 3.1.31, created on 2017-05-21 00:06:11
   from "/home/pepe/Documentos/php/fuel/fuel/app/views/administracion/empresa/index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5920832f686519_44425262',
+  'unifunc' => 'content_5921204334aef0_20499779',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fc050394b6ced3b10453074cd0094a651e707eed' => 
     array (
       0 => '/home/pepe/Documentos/php/fuel/fuel/app/views/administracion/empresa/index.tpl',
-      1 => 1495302938,
+      1 => 1495342903,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5920832f686519_44425262 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5921204334aef0_20499779 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="col-md-6 workspace">
 	<form action="#" class="sky-form">
@@ -77,7 +77,8 @@ function content_5920832f686519_44425262 (Smarty_Internal_Template $_smarty_tpl)
 	<form action="#" class="sky-form">
 		<header>Sedes</header>
 		<fieldset>
-			<h1>FUTURA TABLA DE SEDES CON BOTONES PARA LINKEAR SUS ALMACENES CON SU TIPO</h1>
+			<label class="texto-der oculto" id="txtMensajeRpta"></label>
+			<table class="list issues" style="" id="tablaSedes"></table>
 		</fieldset>
 	</form>
 </div><?php }

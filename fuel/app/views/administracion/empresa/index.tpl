@@ -47,7 +47,8 @@
 	<form action="#" class="sky-form">
 		<header>Sedes</header>
 		<fieldset>
-			<h1>FUTURA TABLA DE SEDES CON BOTONES PARA LINKEAR SUS ALMACENES CON SU TIPO</h1>
+			<label class="texto-der oculto" id="txtMensajeRpta"></label>
+			<table class="list issues" style="" id="tablaSedes"></table>
 		</fieldset>
 	</form>
 </div>

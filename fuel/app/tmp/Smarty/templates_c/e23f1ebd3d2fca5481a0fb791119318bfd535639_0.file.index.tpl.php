@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-05-18 08:19:52
+/* Smarty version 3.1.31, created on 2017-05-22 20:19:40
   from "/home/pepe/Documentos/php/fuel/fuel/app/views/maestros/departamento/index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_591d9f78a27536_71510178',
+  'unifunc' => 'content_59238e2c99fbc9_83034410',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e23f1ebd3d2fca5481a0fb791119318bfd535639' => 
     array (
       0 => '/home/pepe/Documentos/php/fuel/fuel/app/views/maestros/departamento/index.tpl',
-      1 => 1495113591,
+      1 => 1495502277,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_591d9f78a27536_71510178 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59238e2c99fbc9_83034410 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="col-md-12 workspace">
 	<form action="#" class="sky-form">
@@ -52,7 +52,7 @@ function content_591d9f78a27536_71510178 (Smarty_Internal_Template $_smarty_tpl)
 			<div class="col-md-4 workspace">
 				<div class="form-group">
 				    <label for="txtDistrito">Ingrese el distirto a buscar - distrito_id : </label><label id="idDistrito"></label>
-				    <input type="text" class="form-control mootools" id="txtDistrito" placeholder="Distrito , Provincia, Departamento" operacion="EscribirAutoComplete" objeto="autocompleteDistritos">
+				    <input type="text" class="form-control mootools" id="txtDistrito" placeholder="Distrito , Provincia, Departamento" operacion="EscribirAutoComplete" objeto_autocomplete ="autocompleteDistritos">
 				    <ul id="autoDistrito" class="oculto sugerencia-contenedor"></ul>
 				  </div>
 			</div>

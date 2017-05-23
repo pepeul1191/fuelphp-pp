@@ -28,7 +28,7 @@
 			<div class="col-md-4 workspace">
 				<div class="form-group">
 				    <label for="txtDistrito">Ingrese el distirto a buscar - distrito_id : </label><label id="idDistrito"></label>
-				    <input type="text" class="form-control mootools" id="txtDistrito" placeholder="Distrito , Provincia, Departamento" operacion="EscribirAutoComplete" objeto="autocompleteDistritos">
+				    <input type="text" class="form-control mootools" id="txtDistrito" placeholder="Distrito , Provincia, Departamento" operacion="EscribirAutoComplete" objeto_autocomplete ="autocompleteDistritos">
 				    <ul id="autoDistrito" class="oculto sugerencia-contenedor"></ul>
 				  </div>
 			</div>

@@ -15,7 +15,6 @@ class Controller_Administracion_Empresa extends Controller
         $empresa = json_decode($rest->get());
         $rest = new Rest(Url::get_service('ubicaciones') . 'distrito/buscar_vista/' . $empresa->{'distrito_id'});
         $nombre_distrito = $rest->get();
-        //var_dump($empresa);exit();
 
         $view = View::forge('layouts/application.tpl');
         $view->set_global('title', 'Administración/Empresa');

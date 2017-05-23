@@ -70,8 +70,9 @@ return array(
 
 	#administracion
 	'administracion' => array(array('GET', new Route('administracion/empresa/index'))),
-);
+	#empresa
+	'administracion/empresa' => array(array('GET', new Route('administracion/empresa/index'))),
+	'administracion/empresa/guardar' => array(array('POST', new Route('administracion/empresa/guardar'))),
+	#sede
 
-/*
-    get '/accesos/menu/menu_modulos' => 'accesos/menu#menu_modulos'
-*/
+);
