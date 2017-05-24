@@ -48,6 +48,21 @@ class Controller_Files_Dni extends Controller
 
                 $ftp->connect();
                 $ftp->upload($file_origen, $file_destino, 'binary', 0775);
+
+                $rest = new Rest(Url::get_service('archivos') . 'extension/obtener_id?mime_extension=' . $value[0]['mimetype']);
+                $extension_id = json_decode($rest->get());
+                $data = array(
+                    'nombre' => Input::post('nombre'),
+                    'descripcion' => Input::post('descripcion'),
+                    'nombre_generado' => $value[0]['saved_as'],
+                    "carpeta" => 'DNIs/',
+                    'extension_id' => $extension_id
+                );
+                $rest = new Rest(Url::get_service('archivos') . 'archivo/guardar?data=' . json_encode($data));
+                $archivo_id = $rest->post();
+                $rpta = $archivo_id;
+
+
                 $ftp->close();
             } catch (Exception $e) {
                 $rpta = 'Excepción capturada: '.  $e->getMessage();

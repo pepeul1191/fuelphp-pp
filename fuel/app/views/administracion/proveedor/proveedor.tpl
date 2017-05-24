@@ -70,7 +70,7 @@
 					</div>
 					<div class="col-md-12" style="margin-top: 10px">
 						<button id="upload_file_ruc" class="btn btn-app pull-left"><i class="fa fa-upload" aria-hidden="true" style="margin-right:5px"></i>Subir Archivo</button>
-						<progress id="progbar_dni" value="0" min="0" max="100" class="" role=""></progress>
+						<progress id="progbar_ruc" value="0" min="0" max="100" class="" role=""></progress>
 					</div>
 				</div>
 			</div>
