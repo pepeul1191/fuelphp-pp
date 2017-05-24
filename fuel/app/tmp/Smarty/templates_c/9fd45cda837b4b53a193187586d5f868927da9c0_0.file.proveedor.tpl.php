@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-05-23 20:40:44
+/* Smarty version 3.1.31, created on 2017-05-23 21:55:27
   from "/home/pepe/Documentos/php/fuel/fuel/app/views/administracion/proveedor/proveedor.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_5924e49c8118f0_40410256',
+  'unifunc' => 'content_5924f61f4424c3_75365752',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9fd45cda837b4b53a193187586d5f868927da9c0' => 
     array (
       0 => '/home/pepe/Documentos/php/fuel/fuel/app/views/administracion/proveedor/proveedor.tpl',
-      1 => 1495590034,
+      1 => 1495594525,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5924e49c8118f0_40410256 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5924f61f4424c3_75365752 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="col-md-8 workspace">
 	<form action="#" class="sky-form">
@@ -34,7 +34,7 @@ echo $_smarty_tpl->tpl_vars['proveedor']->value->{'id'};
 				<div class="col-md-8 workspace">
 					<div class="form-group">
 					    <label for="txtRazonSocial">Razón Social</label>
-					    <input type="text" class="form-control" id="txtRazonSocial" value="<?php if (isset($_smarty_tpl->tpl_vars['proveedor']->value->{'razon_social'})) {
+					    <input type="text" class="form-control" id="txtRazonSocial"  <?php if ($_smarty_tpl->tpl_vars['disable']->value == true) {?>disabled<?php }?> value="<?php if (isset($_smarty_tpl->tpl_vars['proveedor']->value->{'razon_social'})) {
 echo $_smarty_tpl->tpl_vars['proveedor']->value->{'razon_social'};
 }?>">
 					</div>
@@ -42,7 +42,7 @@ echo $_smarty_tpl->tpl_vars['proveedor']->value->{'razon_social'};
 				<div class="col-md-4 workspace">
 					<div class="form-group">
 					    <label for="txtRuc">RUC</label>
-					    <input type="text" class="form-control" id="txtRuc" value="<?php if (isset($_smarty_tpl->tpl_vars['proveedor']->value->{'ruc'})) {
+					    <input type="text" class="form-control" id="txtRuc"  <?php if ($_smarty_tpl->tpl_vars['disable']->value == true) {?>disabled<?php }?> value="<?php if (isset($_smarty_tpl->tpl_vars['proveedor']->value->{'ruc'})) {
 echo $_smarty_tpl->tpl_vars['proveedor']->value->{'ruc'};
 }?>">
 					</div>
@@ -52,7 +52,7 @@ echo $_smarty_tpl->tpl_vars['proveedor']->value->{'ruc'};
 				<div class="col-md-12 workspace">
 					<div class="form-group">
 					    <label for="txtDireccion">Dirección</label>
-					    <input type="text" class="form-control" id="txtDireccion" value="<?php if (isset($_smarty_tpl->tpl_vars['proveedor']->value->{'direccion'})) {
+					    <input type="text" class="form-control" id="txtDireccion"  <?php if ($_smarty_tpl->tpl_vars['disable']->value == true) {?>disabled<?php }?> value="<?php if (isset($_smarty_tpl->tpl_vars['proveedor']->value->{'direccion'})) {
 echo $_smarty_tpl->tpl_vars['proveedor']->value->{'direccion'};
 }?>">
 					</div>
@@ -64,7 +64,7 @@ echo $_smarty_tpl->tpl_vars['proveedor']->value->{'direccion'};
 					    <label for="txtDistrito">Distrito</label><label id="idDistrito" class="oculto"><?php if (isset($_smarty_tpl->tpl_vars['proveedor']->value->{'distrito_id'})) {
 echo $_smarty_tpl->tpl_vars['proveedor']->value->{'distrito_id'};
 }?></label>
-					    <input type="text" class="form-control mootools" id="txtDistrito" placeholder="Distrito , Provincia, Departamento" operacion="EscribirAutoComplete" objeto_autocomplete="autocompleteDistritos" value="<?php if (isset($_smarty_tpl->tpl_vars['nombre_distrito']->value)) {
+					    <input type="text" class="form-control mootools" id="txtDistrito" placeholder="Distrito , Provincia, Departamento" operacion="EscribirAutoComplete" objeto_autocomplete="autocompleteDistritos" <?php if ($_smarty_tpl->tpl_vars['disable']->value == true) {?>disabled<?php }?> value="<?php if (isset($_smarty_tpl->tpl_vars['nombre_distrito']->value)) {
 echo $_smarty_tpl->tpl_vars['nombre_distrito']->value;
 }?>">
 					    <ul id="autoDistrito" class="oculto sugerencia-contenedor"></ul>
@@ -72,7 +72,9 @@ echo $_smarty_tpl->tpl_vars['nombre_distrito']->value;
 				</div>
 				<div class="col-md-4 workspace">
 					<div class="form-group">
+						<?php if ($_smarty_tpl->tpl_vars['disable']->value == false) {?>
 						<button class="btn btn-app" id="btnGuardarEmpresa"> <i class="fa fa-check" style="margin-right:5px"></i>Guardar Cambios</button>
+						<?php }?>
 					</div>
 				</div>
 			</div>

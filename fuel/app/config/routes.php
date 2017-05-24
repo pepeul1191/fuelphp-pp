@@ -82,6 +82,8 @@ return array(
 	'administracion/proveedor/listar' => array(array('GET', new Route('administracion/proveedor/listar'))),
 	'administracion/proveedor/nuevo' => array(array('GET', new Route('administracion/proveedor/nuevo'))),
 	'administracion/proveedor/guardar' => array(array('GET', new Route('administracion/proveedor/guardar'))),
+	'administracion/proveedor/ver/:id' => array(array('GET', new Route('administracion/proveedor/ver'))),
+	'administracion/proveedor/editar/:id' => array(array('GET', new Route('administracion/proveedor/editar'))),
 	# administracion / sede
 	'administracion/sedes' => array(array('GET', new Route('administracion/sede/index'))),
 	'administracion/sede/guardar' => array(array('POST', new Route('administracion/sede/guardar'))),
