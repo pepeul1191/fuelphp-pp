@@ -63,7 +63,7 @@ class Controller_Files_Ruc extends Controller
 
                     $ftp->close();
                     $rpta['tipo_mensaje'] = 'success';
-                    $rpta['mensaje'] = ['Se ha cargado el RUC con éxito', $archivo_id];
+                    $rpta['mensaje'] = ['Se ha cargado el RUC con éxito', $archivo_id, 'http://' . $ftp_server . '/RUCs/' . $value[0]['saved_as']];
                 }else{
                     $rpta['tipo_mensaje'] = 'error';
                     $rpta['mensaje'] = ['Error: No se pudo establecer la conección con el servidor FTP'];

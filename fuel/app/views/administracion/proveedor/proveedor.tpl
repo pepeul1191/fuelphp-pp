@@ -58,7 +58,8 @@
 					</div>
 					<div class="col-md-12" style="margin-top: 10px">
 						<button id="upload_file_dni" class="btn btn-app pull-left"><i class="fa fa-upload" aria-hidden="true" style="margin-right:5px"></i>Subir Archivo</button>
-						<progress id="progbar_dni" value="0" min="0" max="100" class="" role=""></progress>
+						<a href="#"  target="_blank" id="view_file_dni" class="btn btn-app pull-left oculto" style="margin-left:10px"><i class="fa fa-search" aria-hidden="true" style="margin-right: 5px"></i>Ver Archivo</a>
+						<progress id="progbar_dni" value="0" min="0" max="100" class="oculto" role=""></progress>
 					</div>
 				</div>
 			</div>
@@ -71,7 +72,8 @@
 					</div>
 					<div class="col-md-12" style="margin-top: 10px">
 						<button id="upload_file_ruc" class="btn btn-app pull-left"><i class="fa fa-upload" aria-hidden="true" style="margin-right:5px"></i>Subir Archivo</button>
-						<progress id="progbar_ruc" value="0" min="0" max="100" class="" role=""></progress>
+						<a href="#" target="_blank" id="view_file_ruc" class="btn btn-app pull-left oculto" style="margin-left:10px"><i class="fa fa-search" aria-hidden="true" style="margin-right:5px"></i>Ver Archivo</a>
+						<progress id="progbar_ruc" value="0" min="0" max="100" class="oculto" role=""></progress>
 					</div>
 				</div>
 			</div>
