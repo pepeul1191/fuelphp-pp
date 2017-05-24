@@ -84,6 +84,8 @@ return array(
 	'administracion/proveedor/guardar' => array(array('GET', new Route('administracion/proveedor/guardar'))),
 	'administracion/proveedor/ver/:id' => array(array('GET', new Route('administracion/proveedor/ver'))),
 	'administracion/proveedor/editar/:id' => array(array('GET', new Route('administracion/proveedor/editar'))),
+	'administracion/proveedor/subir_ruc' => array(array('POST', new Route('files/ruc/subir'))),
+	'administracion/proveedor/subir_dni' => array(array('POST', new Route('files/dni/subir'))),
 	# administracion / sede
 	'administracion/sedes' => array(array('GET', new Route('administracion/sede/index'))),
 	'administracion/sede/guardar' => array(array('POST', new Route('administracion/sede/guardar'))),

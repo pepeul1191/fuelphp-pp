@@ -18,6 +18,7 @@ class Url
             'acl' => 'http://localhost:3003/',
             'ubicaciones' => 'http://localhost/ubicaciones/',
             'administracion' => 'http://localhost/administracion/',
+            'ftp' => '192.168.1.12',
         );
         return $services[$key];
     }

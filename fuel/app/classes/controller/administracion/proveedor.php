@@ -31,7 +31,7 @@ class Controller_Administracion_Proveedor extends Controller
         $view->set_global('titleForm', 'Ingrese los Datos del Nuevo Proveedor');
         $view->set_global('rutaForm', 'Administración / Proveedor / Nuevo');
         $view->set_global('csss', ['bower_components/swp-plugins/assets/css/mootools.autocomplete','assets/accesos/proveedor/css/index']);
-        $view->set_global('jss', ['bower_components/swp-plugins/assets/js/mootools.chain', 'bower_components/swp-plugins/assets/js/mootools.dao', 'bower_components/swp-plugins/assets/js/mootools.autocomplete','assets/administracion/proveedor/js/proveedor']);
+        $view->set_global('jss', ['bower_components/swp-plugins/assets/js/mootools.chain', 'bower_components/swp-plugins/assets/js/mootools.dao', 'bower_components/swp-plugins/assets/js/mootools.autocomplete','bower_components/swp-plugins/assets/js/jquery.upload','assets/administracion/proveedor/js/proveedor']);
         $view->set_global('disable', false);
         $view->set_global('partial', 'administracion/proveedor/proveedor.tpl');
 
@@ -100,7 +100,7 @@ class Controller_Administracion_Proveedor extends Controller
         $view->set_global('titleForm', 'Ingrese los Datos del Proveedor a Editar');
         $view->set_global('rutaForm', 'Administración / Proveedor / Editar');
         $view->set_global('csss', ['bower_components/swp-plugins/assets/css/mootools.autocomplete','assets/accesos/proveedor/css/index']);
-        $view->set_global('jss', ['bower_components/swp-plugins/assets/js/mootools.chain', 'bower_components/swp-plugins/assets/js/mootools.dao', 'bower_components/swp-plugins/assets/js/mootools.autocomplete','assets/administracion/proveedor/js/proveedor']);
+        $view->set_global('jss', ['bower_components/swp-plugins/assets/js/mootools.chain', 'bower_components/swp-plugins/assets/js/mootools.dao', 'bower_components/swp-plugins/assets/js/mootools.autocomplete','bower_components/swp-plugins/assets/js/jquery.upload','assets/administracion/proveedor/js/proveedor']);
         $view->set_global('proveedor', $proveedor);
         $view->set_global('nombre_distrito', $nombre_distrito);
         $view->set_global('disable', false);

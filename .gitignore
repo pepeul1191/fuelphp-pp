@@ -33,4 +33,5 @@ desktop.ini
 /fuel/app/config/crypt.php
 
 /fuel/app/temp/Smarty
+/fuel/app/tmp/Smarty/templates_c
 /public/bower_components/*

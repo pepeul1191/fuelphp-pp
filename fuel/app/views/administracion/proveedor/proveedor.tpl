@@ -49,7 +49,31 @@
 	<form action="#" class="sky-form">
 		<header>Anexo - Imágenes del Proveedor</header>
 		<fieldset>
-			
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-12">
+					    <label class="control-label">DNI</label><label id="imagen_dni_id"></label>
+						<input type="file" id="input_file_dni" name="myFile" type="file" class="" />
+					</div>
+					<div class="col-md-12" style="margin-top: 10px">
+						<button id="upload_file_dni" class="btn btn-app pull-left"><i class="fa fa-upload" aria-hidden="true" style="margin-right:5px"></i>Subir Archivo</button>
+						<progress id="progbar_dni" value="0" min="0" max="100" class="" role=""></progress>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 hr"></div>
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-12">
+					    <label class="control-label">RUC</label><label id="imagen_ruc_id"></label>
+						<input type="file" id="input_file_ruc" name="myFile" type="file" class="" />
+					</div>
+					<div class="col-md-12" style="margin-top: 10px">
+						<button id="upload_file_ruc" class="btn btn-app pull-left"><i class="fa fa-upload" aria-hidden="true" style="margin-right:5px"></i>Subir Archivo</button>
+						<progress id="progbar_dni" value="0" min="0" max="100" class="" role=""></progress>
+					</div>
+				</div>
+			</div>
 		</fieldset>
 	</form>
 </div>
