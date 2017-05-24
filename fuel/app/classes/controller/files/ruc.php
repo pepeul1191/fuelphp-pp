@@ -46,30 +46,35 @@ class Controller_Files_Ruc extends Controller
                 $file_origen = $value[0]['saved_to'] . $value[0]['saved_as'];
                 $file_destino = 'Documentos/RUCs/' . $value[0]['saved_as'];
 
-                $ftp->connect();
-                $ftp->upload($file_origen, $file_destino, 'binary', 0775);
+               if($ftp->connect()){
+                    $ftp->upload($file_origen, $file_destino, 'binary', 0775);
 
-                $rest = new Rest(Url::get_service('archivos') . 'extension/obtener_id?mime_extension=' . $value[0]['mimetype']);
-                $extension_id = json_decode($rest->get());
-                $data = array(
-                    'nombre' => Input::post('nombre'),
-                    'descripcion' => Input::post('descripcion'),
-                    'nombre_generado' => $value[0]['saved_as'],
-                    "carpeta" => 'RUCs/',
-                    'extension_id' => $extension_id
-                );
-                $rest = new Rest(Url::get_service('archivos') . 'archivo/guardar?data=' . json_encode($data));
-                $archivo_id = $rest->post();
-                $rpta = $archivo_id;
+                    $rest = new Rest(Url::get_service('archivos') . 'extension/obtener_id?mime_extension=' . $value[0]['mimetype']);
+                    $extension_id = json_decode($rest->get());
+                    $data = array(
+                        'nombre' => Input::post('nombre'),
+                        'descripcion' => Input::post('descripcion'),
+                        'nombre_generado' => $value[0]['saved_as'],
+                        "carpeta" => 'DNIs/',
+                        'extension_id' => $extension_id
+                    );
+                    $rest = new Rest(Url::get_service('archivos') . 'archivo/guardar?data=' . json_encode($data));
+                    $archivo_id = $rest->post();
 
-
-                $ftp->close();
+                    $ftp->close();
+                    $rpta['tipo_mensaje'] = 'success';
+                    $rpta['mensaje'] = ['Se ha cargado el RUC con éxito', $archivo_id];
+                }else{
+                    $rpta['tipo_mensaje'] = 'error';
+                    $rpta['mensaje'] = ['Error: No se pudo establecer la conección con el servidor FTP'];
+                }
             } catch (Exception $e) {
-                $rpta = 'Excepción capturada: '.  $e->getMessage();
+                $rpta['tipo_mensaje'] = 'error';
+                $rpta['mensaje'] = ['Se produjo un error al cargar el RUC', $e->getMessage()];
             }
          } 
 
-        return $rpta;
+        return json_encode($rpta);
     }
 }
 

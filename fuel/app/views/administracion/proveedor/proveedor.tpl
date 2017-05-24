@@ -51,6 +51,7 @@
 		<fieldset>
 			<div class="col-md-12">
 				<div class="row">
+				<label class="texto-der" id="txtMensajeRptaImagenes"></label>
 					<div class="col-md-12">
 					    <label class="control-label">DNI</label><label id="imagen_dni_id"></label>
 						<input type="file" id="input_file_dni" name="myFile" type="file" class="" />
