@@ -72,12 +72,19 @@ return array(
 	'maestros/tipos_almacen/listar' => array(array('GET', new Route('maestros/tiposAlmacen/listar'))),
 	'maestros/tipos_almacen/guardar' => array(array('POST', new Route('maestros/tiposAlmacen/guardar'))),
 
-	#administracion
+	# administracion
 	'administracion' => array(array('GET', new Route('administracion/empresa/index'))),
-	#empresa
+	# administracion / empresa
 	'administracion/empresa' => array(array('GET', new Route('administracion/empresa/index'))),
 	'administracion/empresa/guardar' => array(array('POST', new Route('administracion/empresa/guardar'))),
-	#sede
-	'administracion/sede/listar/:empresa_id' => array(array('GET', new Route('administracion/sede/listar'))),
+	# administracion / proveedores
+	'administracion/proveedores' => array(array('GET', new Route('administracion/proveedor/index'))),
+	'administracion/proveedor/listar' => array(array('GET', new Route('administracion/proveedor/listar'))),
+	'administracion/proveedor/nuevo' => array(array('GET', new Route('administracion/proveedor/nuevo'))),
+	'administracion/proveedor/guardar' => array(array('GET', new Route('administracion/proveedor/guardar'))),
+	# administracion / sede
+	'administracion/sedes' => array(array('GET', new Route('administracion/sede/index'))),
 	'administracion/sede/guardar' => array(array('POST', new Route('administracion/sede/guardar'))),
+	'aadministracion/sede/listar/:empresa_id' => array(array('GET', new Route('administracion/sede/listar'))),
+	'administracion/sede/ver_almacenes' => array(array('GET', new Route('administracion/sede/ver_almacenes'))),
 );

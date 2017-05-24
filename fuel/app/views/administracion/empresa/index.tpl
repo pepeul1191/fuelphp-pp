@@ -1,4 +1,4 @@
-<div class="col-md-6 workspace">
+<div class="col-md-10 workspace">
 	<form action="#" class="sky-form">
 		<header>Información de la Empresa</header>
 		<fieldset>
@@ -30,7 +30,7 @@
 				<div class="col-md-8 workspace">
 					<div class="form-group">
 					    <label for="txtDistrito">Distrito</label><label id="idDistrito" class="oculto">{$empresa->{'distrito_id'}}</label>
-					    <input type="text" class="form-control mootools" id="txtDistrito" placeholder="Distrito , Provincia, Departamento" operacion="EscribirAutoComplete" objeto="autocompleteDistritos" value="{$nombre_distrito}">
+					    <input type="text" class="form-control mootools" id="txtDistrito" placeholder="Distrito , Provincia, Departamento" operacion="EscribirAutoComplete" objeto_autocomplete="autocompleteDistritos" value="{$nombre_distrito}">
 					    <ul id="autoDistrito" class="oculto sugerencia-contenedor"></ul>
 					</div>
 				</div>
@@ -40,15 +40,6 @@
 					</div>
 				</div>
 			</div>
-		</fieldset>
-	</form>
-</div>
-<div class="col-md-6 workspace">
-	<form action="#" class="sky-form">
-		<header>Sedes</header>
-		<fieldset>
-			<label class="texto-der oculto" id="txtMensajeRpta"></label>
-			<table class="list issues" style="" id="tablaSedes"></table>
 		</fieldset>
 	</form>
 </div>
