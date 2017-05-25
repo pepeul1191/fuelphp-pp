@@ -36,9 +36,7 @@
 				</div>
 				<div class="col-md-4 workspace">
 					<div class="form-group">
-						{if $disable == false}
-						<button class="btn btn-app" id="btnGuardarEmpresa"> <i class="fa fa-check" style="margin-right:5px"></i>Guardar Cambios</button>
-						{/if}
+						<button class="btn btn-app" id="btnGuardarEmpresa" {if $disable == true}disabled{/if}> <i class="fa fa-check" style="margin-right:5px"></i>Guardar Cambios</button>
 					</div>
 				</div>
 			</div>
@@ -53,12 +51,12 @@
 				<div class="row">
 				<label class="texto-der" id="txtMensajeRptaImagenes"></label>
 					<div class="col-md-12">
-					    <label class="control-label">DNI</label><label id="imagen_dni_id"></label>
-						<input type="file" id="input_file_dni" name="myFile" type="file" class="" />
+					    <label class="control-label">DNI</label><label id="imagen_dni_id" class="oculto">{if isset($imgen_dni->{'id'})}{$imgen_dni->{'id'}}{/if}</label>
+						<input type="file" id="input_file_dni" name="myFile" type="file" class="" {if $disable == true}disabled{/if}/>
 					</div>
 					<div class="col-md-12" style="margin-top: 10px">
-						<button id="upload_file_dni" class="btn btn-app pull-left"><i class="fa fa-upload" aria-hidden="true" style="margin-right:5px"></i>Subir Archivo</button>
-						<a href="#"  target="_blank" id="view_file_dni" class="btn btn-app pull-left oculto" style="margin-left:10px"><i class="fa fa-search" aria-hidden="true" style="margin-right: 5px"></i>Ver Archivo</a>
+						<button id="upload_file_dni" class="btn btn-app pull-left" {if $disable == true}disabled{/if}><i class="fa fa-upload" aria-hidden="true" style="margin-right:5px"></i>Subir Archivo</button>
+						<a href="{if isset($imgen_dni->{'ruta_documento'})}http://{Url::get_service('ftp')}/{$imgen_dni->{'ruta_documento'}}{else}'#'{/if}"  target="_blank" id="view_file_dni" class="btn btn-app pull-left {if !isset($imgen_dni->{'ruta_documento'})}oculto{/if}" style="margin-left:10px"><i class="fa fa-search" aria-hidden="true" style="margin-right: 5px"></i>Ver Archivo</a>
 						<progress id="progbar_dni" value="0" min="0" max="100" class="oculto" role=""></progress>
 					</div>
 				</div>
@@ -67,12 +65,12 @@
 			<div class="col-md-12">
 				<div class="row">
 					<div class="col-md-12">
-					    <label class="control-label">RUC</label><label id="imagen_ruc_id"></label>
-						<input type="file" id="input_file_ruc" name="myFile" type="file" class="" />
+					    <label class="control-label">RUC</label><label id="imagen_ruc_id" class="oculto">{if isset($imgen_ruc->{'id'})}{$imgen_ruc->{'id'}}{/if}</label>
+						<input type="file" id="input_file_ruc" name="myFile" type="file" class="" {if $disable == true}disabled{/if}/>
 					</div>
 					<div class="col-md-12" style="margin-top: 10px">
-						<button id="upload_file_ruc" class="btn btn-app pull-left"><i class="fa fa-upload" aria-hidden="true" style="margin-right:5px"></i>Subir Archivo</button>
-						<a href="#" target="_blank" id="view_file_ruc" class="btn btn-app pull-left oculto" style="margin-left:10px"><i class="fa fa-search" aria-hidden="true" style="margin-right:5px"></i>Ver Archivo</a>
+						<button id="upload_file_ruc" class="btn btn-app pull-left" {if $disable == true}disabled{/if}><i class="fa fa-upload" aria-hidden="true" style="margin-right:5px"></i>Subir Archivo</button>
+						<a href="{if isset($imgen_dni->{'ruta_documento'})}http://{Url::get_service('ftp')}/{$imgen_dni->{'ruta_documento'}}{else}'#'{/if}" target="_blank" id="view_file_ruc" class="btn btn-app pull-left {if !isset($imgen_dni->{'ruta_documento'})}oculto{/if}" style="margin-left:10px"><i class="fa fa-search" aria-hidden="true" style="margin-right:5px"></i>Ver Archivo</a>
 						<progress id="progbar_ruc" value="0" min="0" max="100" class="oculto" role=""></progress>
 					</div>
 				</div>

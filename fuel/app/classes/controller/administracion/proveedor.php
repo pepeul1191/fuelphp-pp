@@ -78,6 +78,18 @@ class Controller_Administracion_Proveedor extends Controller
         $view->set_global('disable', true);
         $view->set_global('partial', 'administracion/proveedor/proveedor.tpl');
 
+        if($proveedor->{'imagen_dni_id'} != null){
+            $rest = new Rest(Url::get_service('archivos') . 'archivo/obtener_ruta/' . $proveedor->{'imagen_dni_id'});
+            $imgen_dni = json_decode($rest->get());
+            $view->set_global('imgen_dni', $imgen_dni);
+        }
+
+        if($proveedor->{'imagen_ruc_id'} != null){
+            $rest = new Rest(Url::get_service('archivos') . 'archivo/obtener_ruta/' . $proveedor->{'imagen_ruc_id'});
+            $imgen_ruc = json_decode($rest->get());
+            $view->set_global('imgen_ruc', $imgen_ruc);
+        }
+
         return $view;
     }
 
@@ -105,6 +117,18 @@ class Controller_Administracion_Proveedor extends Controller
         $view->set_global('nombre_distrito', $nombre_distrito);
         $view->set_global('disable', false);
         $view->set_global('partial', 'administracion/proveedor/proveedor.tpl');
+
+        if($proveedor->{'imagen_dni_id'} != null){
+            $rest = new Rest(Url::get_service('archivos') . 'archivo/obtener_ruta/' . $proveedor->{'imagen_dni_id'});
+            $imgen_dni = json_decode($rest->get());
+            $view->set_global('imgen_dni', $imgen_dni);
+        }
+
+        if($proveedor->{'imagen_ruc_id'} != null){
+            $rest = new Rest(Url::get_service('archivos') . 'archivo/obtener_ruta/' . $proveedor->{'imagen_ruc_id'});
+            $imgen_ruc = json_decode($rest->get());
+            $view->set_global('imgen_ruc', $imgen_ruc);
+        }
 
         return $view;
     }

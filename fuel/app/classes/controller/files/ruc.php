@@ -55,7 +55,7 @@ class Controller_Files_Ruc extends Controller
                         'nombre' => Input::post('nombre'),
                         'descripcion' => Input::post('descripcion'),
                         'nombre_generado' => $value[0]['saved_as'],
-                        "carpeta" => 'DNIs/',
+                        "carpeta" => 'RUCs/',
                         'extension_id' => $extension_id
                     );
                     $rest = new Rest(Url::get_service('archivos') . 'archivo/guardar?data=' . json_encode($data));
