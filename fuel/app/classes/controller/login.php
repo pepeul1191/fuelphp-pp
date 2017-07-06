@@ -7,7 +7,8 @@ class Controller_Login extends Controller
         if (Session::get('autenticado') != true){
             $view = View::forge('layouts/blank.tpl');
             $view->set_global('title', 'Login');
-            $view->set_global('csss', ['assets/login/css/index']);
+            $view->set_global('csss', ['dist/login/styles.min']);
+            $view->set_global('jss', ['dist/login/app.min']);
             $view->set_global('partial', 'login/index.tpl');
 
             return $view;
@@ -25,7 +26,7 @@ class Controller_Login extends Controller
         $rest->post();
 
         //if ($rest->get_rpta() == 1){
-        if (1 == 1){
+        if (1 == 0){
             Session::set('autenticado', true);
             Session::set('usuario', $usuario);
             Session::set('tiempo', date('m/d/Y h:i:s a', time()));
@@ -34,8 +35,9 @@ class Controller_Login extends Controller
         }else{
             $view = View::forge('layouts/blank.tpl');
             $view->set_global('title', 'Login');
-            $view->set_global('mensaje', true);
-            $view->set_global('csss', ['assets/login/css/index']);
+            $view->set_global('csss', ['dist/login/styles.min']);
+            $view->set_global('jss', ['dist/login/app.min']);
+            $view->set_global('data', ['mensaje' => true]);
             $view->set_global('partial', 'login/index.tpl');
 
             return $view;

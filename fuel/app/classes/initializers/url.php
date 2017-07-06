@@ -8,7 +8,7 @@ class Url
 
     public static function statics()
     {
-       return 'http://localhost:8001/html-unify/';
+       return 'http://localhost/fuel/public/';
     }
 
     public static function get_service($key)

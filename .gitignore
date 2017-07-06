@@ -35,3 +35,4 @@ desktop.ini
 /fuel/app/temp/Smarty
 /fuel/app/tmp/Smarty/templates_c
 /public/bower_components/*
+/node_modules/*
