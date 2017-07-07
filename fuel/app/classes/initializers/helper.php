@@ -45,6 +45,15 @@ class Helper
         return $rpta;
     }
 
+    public static function listar_modulos()
+    {
+        $rest = new Rest(Url::get_service('accesos') . 'modulo/listar_menu?sistema=' . APP_NAME);
+        $rest->get();
+        $menus = $rest->get_rpta();
+        
+        return $menus;
+    }
+
     public static function menu_submodulos($nombre_modulo)
     {
         $rest = new Rest(Url::get_service('accesos') . 'item/listar/menu/?sistema=' . APP_NAME . '&nombre_modulo=' . $nombre_modulo);

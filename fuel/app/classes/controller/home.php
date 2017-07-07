@@ -14,7 +14,8 @@ class Controller_Home extends Controller
          $view = View::forge('layouts/home.tpl');
          $view->set_global('title', 'Home');
          $view->set_global('modulo', 'Accesos');
-         $view->set_global('csss', ['assets/login/css/index']);
+         $view->set_global('csss', ['dist/home/styles.min']);
+         $view->set_global('jss', ['dist/home/app.min']);
          $view->set_global('partial', 'home/index.tpl');
 
          return $view;

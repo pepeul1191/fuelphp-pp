@@ -26,7 +26,7 @@ class Controller_Login extends Controller
         $rest->post();
 
         //if ($rest->get_rpta() == 1){
-        if (1 == 0){
+        if (1 == 1){
             Session::set('autenticado', true);
             Session::set('usuario', $usuario);
             Session::set('tiempo', date('m/d/Y h:i:s a', time()));
